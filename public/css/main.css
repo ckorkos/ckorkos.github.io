@@ -310,7 +310,7 @@ footer {
   position: relative;
   padding-top: 5px;
   color: rgb(0,1,30);
-  display: block !important;
+  visibility: visible !important;
 }
 
 .buttonimg {
