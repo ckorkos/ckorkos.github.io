@@ -1,0 +1,31 @@
+#pagebody {
+	background-image: url("../images/gravity.jpg");
+	background-size: cover;
+}
+
+.homepagenav {
+	background-color: rgba(100,100,100,0.8);
+	border-radius: 0%;
+	color: #CCCCCC;
+}
+
+.button {
+  $btn-color: random-color($max:200);
+  $btn-color-dark: shade($btn-color, 40%);
+	color: tint($btn-color);
+  @include triangle(up-right, 0, $btn-color-dark, true);
+  @include triangle(down-left, 0, $btn-color-dark, true, before);
+  
+  &:hover {
+    color: tint($btn-color, 75%);
+    
+    &:before,
+    &:after {
+      border-width: $btn-height $btn-width*1.05;
+    }
+  }
+  
+  &:active {
+    background: $btn-color;
+  }
+}
