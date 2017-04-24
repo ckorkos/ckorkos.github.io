@@ -1,0 +1,98 @@
+$grey: #1D1E22;
+$black: #111214;
+$blue: #16CDFF;
+
+body, html, h1, h2, h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300 !important;
+}
+
+.navbar {
+    background-color: $grey;
+    a {
+        color: white !important;
+    }
+
+    .nav {
+        a {
+            text-transform: uppercase;
+        }
+    }
+}
+
+#area1 {
+    margin-top: 50px;
+    background: url(swim-stock.jpg) no-repeat left center;
+    background-size: cover;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#top-swim-meets {
+    background: rgba($grey, 0.8);
+    padding: 15px;
+
+    button, .btn {
+        background: $blue;
+        color: white;
+        border: none;
+        border-radius: 0;
+        font-weight: 300;
+        padding: 6px 18px;
+        text-transform: uppercase;
+    }
+}
+
+.inner-box {
+    padding: 20px;
+    border: 3px solid $blue;
+}
+
+#triple {
+    background: #111214;
+    padding: 15px 0;
+    color: white;
+}
+
+.blue-box {
+    display: block;
+    border: 1px solid $blue;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+        cursor: pointer;
+        color: white;
+        text-decoration: none;
+        background: black;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    @media (max-width: 767px) {
+        margin: 10px 0;
+    }
+}
+
+#area2 {
+    background: url(siwm2.jpg) no-repeat left bottom;
+    background-size: cover;
+    color: white;
+}
+
+.black-box {
+    background: rgba($grey, .6);
+    padding: 15px;
+
+    h2 {
+        font-size: 25px;
+    }
+
+    @media (max-width: 767px) {
+        margin: 10px 0;
+    }
+}
