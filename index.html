@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Chris Korkos</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- SASS for styling -->
+    <link href="sass/sass.bat">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="bootstrap/jumbotron.css" rel="stylesheet">
+
+    <!-- -->
+    <link href="http://sass-lang.com/documentation/file.SASS_REFERENCE.html" rel="stylesheet">
+
+
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="bootstrap/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+    <!-- Functions to change page content. -->
+    <script src="public/js/main.js"></script>
+
+    <!-- Main CSS link -->
+    <link href="public/css/main.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body id="pagebody">
+
+    <div id="pagefront">
+
+      <!-- Main jumbotron -->
+      <div class="jumbotron" id="header">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4"></div>
+              <div class="col-md-4"></div>
+              <div class="col-md-4" style="text-align: right;">
+                <a id="resume" href="files/resume.pdf" target="_blank">
+                  View my Resume >></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="container" id="pic_name">
+            <div class="row">
+              <div class = "col-md-4" style="position:relative; padding-top:2%; left:10%; top:20px;">
+                <img src = "images/prof_pic3.jpg" style = "border: 6px solid #00043a;
+                top: 15px;  height: 220px; width: 220px; border-radius: 50%;" />
+              </div>
+
+              <div class="col-md-8" style="position:relative; padding-top:5%;">
+                <h1>Christopher Korkos</h1>
+                <p>Bachelor of Science in Cognitive Science, Human-Computer Interaction</p>
+                <p>UI Design and Development Professional from San Diego, California</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+              <div class="container" id="logos">
+                <div class="row">
+                  <a class="col-md-2" id="item" href="mailto:chkorkos@gmail.com" target="_blank">
+                    <img src="images/mail.png" height="60" width="60">
+                  </a>
+                  <a class="col-md-2" id="item" href="https://www.linkedin.com/in/christopher-korkos-922925108/" target="_blank">
+                    <img src="images/logo-linkedin.svg" height="60" width="60">
+                  </a>
+                  <a class="col-md-2" id="item" href="https://www.instagram.com/chriskorkos/?hl=en" target="_blank">
+                    <img src="images/insta.png" height="60" width="60">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      
+      <!-- <div id=fakesections></div> -->
+
+      <!-- Nav bar with options to load content below. -->
+      <div class="container" id="midbar">
+        <div class="navbar" id="sections">
+          <div class="row" link="#dddddd">
+
+            <div class="col-md-4">
+              <div class="homepagenav">
+                <a class="button" id="edu" target="_blank" role="button" onclick="changeDivContent('education')">
+                  Education
+                </a>
+              </div>
+           </div>
+
+            <div class="col-md-4">
+              <div class="homepagenav">
+                <a class="button" id="pro" target="_blank" role="button" onclick="changeDivContent('projects')">
+                  Projects
+                </a>
+              </div>
+            </div>
+            
+            <div class="col-md-4">
+              <div class="homepagenav">
+                <a class="button" id="exp" target="_blank" role="button" onclick="changeDivContent('experience')">
+                  Experience
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div id="navswitch"></div>
+
+        <!-- Container that changes based on section selected. -->
+        <div id="divider1"></div>
+        <div id="content"></div>
+        <div id="divider2"></div>
+      </div> <!-- /container -->
+      </div>
+    </div>
+
+  </body>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9"></div>
+        <div class="col-md-3">
+          <p>Photo Credit: <a id="instalink" href="https://www.instagram.com/chrisinnirivera/?hl=en" target="_blank">Chris Rivera</a></p>
+          <p>Starring: Myself and Friends</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>
