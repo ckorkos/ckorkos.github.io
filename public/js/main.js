@@ -146,7 +146,7 @@ function changeDivContent(stuff) {
       });
       */
 
-      $("#loaded").css("height", "1500px");
+      $("#loaded").css("height", "1800px");
       $("#loaded").css("width", "94%");
       $("#divider2").html("<hr>");
 
