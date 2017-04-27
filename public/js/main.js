@@ -46,7 +46,7 @@ $(window).scroll(function() {
   Read if user hovers over a navigation element. If so, turn the
   selection orange.
 */
-$(window).ready(function() {   /* TODO FIX THIS */
+$(window).ready(function() {
   $("#exp").hover(function() {
     $(this).css("color", "orange !important");
   }, function() {
