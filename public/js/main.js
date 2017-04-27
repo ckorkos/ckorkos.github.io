@@ -193,7 +193,7 @@ function changeDivContent(stuff) {
       });
       */
 
-      $("#loaded").css("height", "1230px");
+      $("#loaded").css("height", "1500px");
       $("#loaded").css("width", "94%");
       $("#divider2").html("<hr>");
 
@@ -240,7 +240,7 @@ function changeDivContent(stuff) {
       });
       */
 
-      $("#loaded").css("height", "2300px");
+      $("#loaded").css("height", "3000px");
       $("#loaded").css("width", "94%");
       $("#divider2").html("<hr>");
 
