@@ -6,7 +6,7 @@ $(window).ready(function() {
   var mq = window.matchMedia("(min-width: 780px)");
   if(mq.matches) {
     // window width is at least 780 px
-    $("footer").css("bottom", "5%");
+    $("footer").css("bottom", "15%");
   }
   else {
     // window width is less than 780 px
