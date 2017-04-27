@@ -2,6 +2,10 @@
   General styling.
 */
 
+* {
+  font-family: 'Catamaran', sans-serif !important;
+}
+
 a, button {
   cursor:pointer !important;
 }
