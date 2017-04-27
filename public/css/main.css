@@ -30,6 +30,7 @@ footer {
 }
 
 #instalink {
+  font-size: 20px;
   text-decoration: none;
   color: lightblue;
 }
