@@ -84,8 +84,16 @@ footer {
   align-content: right;
 }
 
-#item {
+.item {
   flex: 0;
+}
+
+.itemimg {
+  border-radius: 30px;
+}
+
+.itemimg:hover {
+  box-shadow: 0 0 60px orange;
 }
 
 /*
