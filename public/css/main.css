@@ -27,7 +27,7 @@ footer {
 
 #instalink {
   text-decoration: none;
-  color: rgb(0,0,200);
+  color: lightblue;
 }
 
 #instalink:hover {
@@ -332,8 +332,3 @@ footer {
 .modal-body {
   font-size: 18px;
 }
-
-/*
-  Experience content.
-*/
-
