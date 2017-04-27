@@ -3,6 +3,16 @@ var empty = "";
 
 $(window).ready(function() {
 
+  var mq = window.matchMedia("(min-width: 780px)");
+  if(mq.matches) {
+    // window width is at least 780 px
+    $("footer").css("top", "0");
+  }
+  else {
+    // window width is less than 780 px
+    $("footer").css("top", "500%");
+  }
+
   var dist = $("#sections").height();
 
   console.log("dist = " + dist);
@@ -90,7 +100,6 @@ function changeColor(direction, name) {
 
   Recolor the project panel text if panel is hovered on.
 */
-
 function centerModal(name, e) {
   var boxTop = e.pageY - 200;
   $("#" + name).css("top", boxTop);
