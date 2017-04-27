@@ -6,11 +6,11 @@ $(window).ready(function() {
   var mq = window.matchMedia("(min-width: 780px)");
   if(mq.matches) {
     // window width is at least 780 px
-    $("footer").css("top", "0");
+    $("footer").css("bottom", "5%");
   }
   else {
     // window width is less than 780 px
-    $("footer").css("top", "500%");
+    $("footer").css("top", "200%");
   }
 
   var dist = $("#sections").height();
