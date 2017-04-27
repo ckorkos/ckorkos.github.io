@@ -146,7 +146,16 @@ function changeDivContent(stuff) {
       });
       */
 
-      $("#loaded").css("height", "1800px");
+      var mq = window.matchMedia("(min-width: 780px)");
+      if(mq.matches) {
+        // window width is at least 780 px
+        $("#loaded").css("height", "1800px");
+      }
+      else {
+        // window width is less than 780 px
+        $("#loaded").css("height", "3500px");
+      }
+
       $("#loaded").css("width", "94%");
       $("#divider2").html("<hr>");
 
@@ -193,7 +202,16 @@ function changeDivContent(stuff) {
       });
       */
 
-      $("#loaded").css("height", "1500px");
+      var mq = window.matchMedia("(min-width: 780px)");
+      if(mq.matches) {
+        // window width is at least 780 px
+        $("#loaded").css("height", "1230px");
+      }
+      else {
+        // window width is less than 780 px
+        $("#loaded").css("height", "1800px");
+      }
+
       $("#loaded").css("width", "94%");
       $("#divider2").html("<hr>");
 
@@ -240,7 +258,16 @@ function changeDivContent(stuff) {
       });
       */
 
-      $("#loaded").css("height", "3000px");
+      var mq = window.matchMedia("(min-width: 780px)");
+      if(mq.matches) {
+        // window width is at least 780 px
+        $("#loaded").css("height", "2300px");
+      }
+      else {
+        // window width is less than 780 px
+        $("#loaded").css("height", "3600px");
+      }
+
       $("#loaded").css("width", "94%");
       $("#divider2").html("<hr>");
 
