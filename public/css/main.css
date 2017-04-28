@@ -52,15 +52,10 @@ footer {
 */
 
 #pagebody {
-  width: 66.6%;
   background-repeat: no-repeat;
   background-attachment: fixed;
 	background-image: url("../../images/beach.jpg");
 	background-size: cover;
-}
-
-#pagefront {
-  width:150%;
 }
 
 #resume {
@@ -89,6 +84,19 @@ footer {
 #pic_name {
   position: relative;
   top: -10px;
+}
+
+#pic {
+  position:relative;
+  padding-top:2%;
+  left:10%;
+  top:20px;
+}
+
+@media (max-width: 768px) {
+  #pic  {
+    left: 2%;
+  }
 }
 
 #logos {
