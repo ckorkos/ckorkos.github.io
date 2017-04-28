@@ -47,6 +47,7 @@ footer {
 
 #pagebody {
   width: 66.6%;
+  position: relative;
   background-repeat: no-repeat;
   background-attachment: fixed;
 	background-image: url("../../images/beach.jpg");
