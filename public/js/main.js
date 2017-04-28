@@ -260,7 +260,7 @@ function changeDivContent(stuff) {
       var mq = window.matchMedia("(min-width: 780px)");
       if(mq.matches) {
         // window width is at least 780 px
-        $("#loaded").css("height", "2000px");
+        $("#loaded").css("height", "2200px");
       }
       else {
         // window width is less than 780 px
