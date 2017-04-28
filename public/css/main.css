@@ -15,7 +15,7 @@ footer {
   bottom: 0;
   right: 0;
   color: #dddddd;
-  font-size: 20px;
+  /*font-size: 20px;*/
 }
 
 .tab {
@@ -38,6 +38,7 @@ footer {
 #instalink:hover {
   color: orange;
   background-color: rgba(50,50,50, 0.8);
+  box-shadow: 0 0 10px rgb(50,50,50);
 }
 
 /*
