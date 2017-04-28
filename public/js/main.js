@@ -152,7 +152,7 @@ function changeDivContent(stuff) {
       }
       else {
         // window width is less than 780 px
-        $("#loaded").css("height", "3500px");
+        $("#loaded").css("height", "3700px");
       }
 
       $("#loaded").css("width", "94%");
