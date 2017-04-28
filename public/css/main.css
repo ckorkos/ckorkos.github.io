@@ -18,6 +18,12 @@ footer {
   font-size: 20px;
 }
 
+@media (max-width: 768px) {
+  footer {
+    position: relative;
+  }
+}
+
 .tab {
   position: relative;
   left: 15px;
@@ -47,7 +53,6 @@ footer {
 
 #pagebody {
   width: 66.6%;
-  position: relative;
   background-repeat: no-repeat;
   background-attachment: fixed;
 	background-image: url("../../images/beach.jpg");
