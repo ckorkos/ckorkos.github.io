@@ -58,12 +58,17 @@ footer {
 	background-size: cover;
 }
 
+#res:hover {
+  content: url('images/waveLight.ico');
+}
+
 #resume {
   position: relative;
   text-align: right;
   font-size: 20px;
   color: rgb(0,1,30);
   text-decoration: none;
+  top: 3px;
 }
 
 #resume:hover {
@@ -71,14 +76,15 @@ footer {
 }
 
 #topbar {
-  background-color:#00043a;
+  background-color: #00043a;
 }
 
 #header {
-  color:#00043a;
+  color: #00043a;
   background-color: rgba(200, 200, 200, 0.95);
   position: relative;
   top: -75px;
+  z-index: 5;
 }
 
 #pic_name {
@@ -91,12 +97,6 @@ footer {
   padding-top:2%;
   left:10%;
   top:20px;
-}
-
-@media (max-width: 768px) {
-  #pic  {
-    left: 2%;
-  }
 }
 
 #logos {
@@ -116,6 +116,21 @@ footer {
   box-shadow: 0 0 60px orange;
 }
 
+@media (max-width: 768px) {
+  #pic  {
+    left: 45px;
+  }
+  #ck {
+    position: relative;
+    left: 10px;
+    padding-bottom: 10px;
+  }
+  #logos {
+    position: relative;
+    left: 25px;
+  }
+}
+
 /*
   Navigation section of page.
 */
@@ -124,7 +139,7 @@ footer {
   position: relative;
   width: 100.1%;
   bottom: 105px;
-  padding:0px;
+  padding: 0px;
 }
 
 #sections {
@@ -167,6 +182,23 @@ footer {
   text-align: center;
   vertical-align: middle;
   padding: 2%;
+}
+
+#wavLogo {
+  opacity: 0.85;
+}
+
+@media (max-width: 768px) {
+  #header {
+    background-color: rgba(200, 200, 200, 1);
+  }
+  #sections {
+    top: -40px;
+  }
+  #wavLogo {
+    position: relative;
+    top: 40px; 
+  }
 }
 
 .button {
