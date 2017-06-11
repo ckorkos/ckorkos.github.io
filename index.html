@@ -79,7 +79,7 @@
           <div class="container" id="pic_name">
             <div class="row">
               <div id="pic" class = "col-md-4" style="">
-                <img src = "images/prof_pic3.jpg" style = "border: 6px solid #00043a;
+                <img id="gradpic" src="images/prof_pic3.jpg" style = "border: 6px solid #00043a;
                 top: 15px;  height: 220px; width: 220px; border-radius: 50%;" />
               </div>
 
@@ -97,13 +97,13 @@
             <div class="col-md-4">
               <div class="container" id="logos">
                 <div class="row">
-                  <a class="col-md-3" class="item" href="mailto:chkorkos@gmail.com" target="_blank">
+                  <a class="col-md-4" class="item" href="mailto:chkorkos@gmail.com" target="_blank">
                     <img class="itemimg" src="images/mail.png" height="60" width="60">
                   </a>
-                  <a class="col-md-3" class="item" href="https://www.linkedin.com/in/christopher-korkos-922925108/" target="_blank">
+                  <a class="col-md-4" class="item" href="https://www.linkedin.com/in/christopher-korkos-922925108/" target="_blank">
                     <img class="itemimg" src="images/logo-linkedin.svg" height="60" width="60">
                   </a>
-                  <a class="col-md-3" class="item" href="https://www.instagram.com/chriskorkos/?hl=en" target="_blank">
+                  <a class="col-md-4" class="item" href="https://www.instagram.com/chriskorkos/?hl=en" target="_blank">
                     <img class="itemimg" src="images/insta.png" height="60" width="60">
                   </a>
                 </div>
@@ -111,65 +111,54 @@
             </div>
           </div>
       </div>
-      
-      <!-- Nav bar with options to load content below. -->
-      <div class="container" id="midbar">
-        <div class="navbar" id="sections">
-          <div class="row">
 
-            <div class="col-md-1" style="position: relative; top: 10px;">
-              <img id="wavLogo" src="images/waveLight.ico" height="45" width="45">
-            </div>
+      <nav class="navbar navbar-default">
+        <div class="container" id="midbar">
 
-            <div class="col-md-3" style="position: relative; top: 4px;">
-              <div class="homepagenav">
-                <a class="button" id="edu" target="_blank" role="button" onclick="changeDivContent('education')">
-                  Education
-                </a>
-              </div>
-            </div>
+          <div class="navbar-header" style="margin: 0;">
+            <button id="burger" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sections" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
 
-            <div class="col-md-4">
-              <div class="homepagenav">
-                <a class="button" id="pro" target="_blank" role="button" onclick="changeDivContent('projects')">
-                  Projects
-                </a>
-              </div>
-            </div>
-            
-            <div class="col-md-4">
-              <div class="homepagenav">
-                <a class="button" id="exp" target="_blank" role="button" onclick="changeDivContent('experience')">
-                  Experience
-                </a>
-              </div>
-            </div>
-
+              <img src="images/arrow.png" width="50" style="padding: 0; position: relative; margin: auto;">
+            </button>
           </div>
+
+          <div class="collapse navbar-collapse" id="sections">
+            <div class="container" style="text-align: center;">
+              <div class="row">
+                <div class="col-md-4"><a class="button" id="edu" role="button" onclick="changeDivContent('education')">
+                  Education</a></div>
+                <div class="col-md-4"><a class="button" id="pro" role="button" onclick="changeDivContent('projects')">
+                  Projects</a></div>
+                <div class="col-md-4"><a class="button" id="exp" role="button" onclick="changeDivContent('experience')">
+                  Experience</a></div>
+              </div>
+            </div>
+          </div>
+
+          <div id="navswitch"></div>
+
+          <!-- Container that changes based on section selected. -->
+          <div id="divider1"></div>
+          <div id="content"></div>
+          <div id="divider2"></div>
+        </div> <!-- /container -->
+      </nav>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-8"></div>
+        <div class="col-md-3">
+          <p>Photo Credit: <a id="instalink" href="https://www.instagram.com/chrisinnirivera/?hl=en" target="_blank">Chris Rivera</a></p>
+          <p>Starring: Myself and Friends</p>
         </div>
-
-        <div id="navswitch"></div>
-
-        <!-- Container that changes based on section selected. -->
-        <div id="divider1"></div>
-        <div id="content"></div>
-        <div id="divider2"></div>
-      </div> <!-- /container -->
       </div>
     </div>
-
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-1"></div>
-          <div class="col-md-8"></div>
-          <div class="col-md-3">
-            <p>Photo Credit: <a id="instalink" href="https://www.instagram.com/chrisinnirivera/?hl=en" target="_blank">Chris Rivera</a></p>
-            <p>Starring: Myself and Friends</p>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </body>
+  </footer>
+</body>
   
 </html>
