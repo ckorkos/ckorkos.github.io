@@ -148,11 +148,11 @@ function changeDivContent(stuff) {
       var mq = window.matchMedia("(min-width: 780px)");
       if(mq.matches) {
         // window width is at least 780 px
-        $("#loaded").css("height", "1600px");
+        $("#loaded").css("height", "2100px");
       }
       else {
         // window width is less than 780 px
-        $("#loaded").css("height", "3700px");
+        $("#loaded").css("height", "4150px");
       }
 
       $("#loaded").css("width", "94%");
