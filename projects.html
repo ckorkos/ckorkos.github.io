@@ -50,9 +50,46 @@
     <h1 id="sectiontitle">Human-Centered Design</h1>
     <hr id="sectionbar">
 
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 box">
+    <div class="container projectContent">
+        <div class="box">
+
+          <!-- Modal Button -->
+          <a id="dev" class="btn btn-lg pane" data-toggle="modal" data-toggle="modal" data-target="#devContent" onmouseover="changeColor(0, 'devtext')" onmouseout="changeColor(1, 'devtext')" onclick="centerModal('devContent', event)">
+            <img class="buttonimg" src="images/devCloud.png">
+            <p class="panetext" id="devtext">Web Development</p>
+          </a>
+
+          <!-- Modal -->
+          <div id="devContent" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+            <!-- Modal Content -->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h1 class="modal-title">Programming for Websites</h1>
+                </div>
+                <div class="modal-body">
+                  <img src="images/devCloud.png" style="position:relative; width:100%; height: auto;">
+                  <br><br>
+                  <p>
+                    To better work alongside developers - and on occasion, as one - I taught myself skills in JavaScript, jQuery, Boostrap, SCSS, and more. The work I completed allowed me to improve my own website as well as provide development work in other independent projects.
+                  </p>
+                  <p>Some of the projects that I completed can be viewed below:</p>
+                  <a href="files/webapp/colors/color.html" target="_blank">
+                    - Project 1: RGB Color Guessing Game</a><br>
+                  <a href="files/webapp/dom/dom.html" target="_blank">
+                    - Project 2: DOM Manipulation Exercises</a><br>
+                </div>
+                <div class="modal-footer"></div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="box">
 
           <!-- Modal Button -->
           <a id="sg" class="btn btn-lg pane" data-toggle="modal" data-toggle="modal" data-target="#sgContent" onmouseover="changeColor(0, 'sgtext')" onmouseout="changeColor(1, 'sgtext')" onclick="centerModal('sgContent', event)">
@@ -104,7 +141,7 @@
 
         </div>
 
-        <div class="col-md-4 box">
+        <div class="box">
 
           <!-- Modal Button -->
           <a id="simp" class="btn btn-lg pane" data-toggle="modal" data-toggle="modal" data-target="#simpContent" onmouseover="changeColor(0, 'simptext')" onmouseout="changeColor(1, 'simptext')" onclick="centerModal('simpContent', event)">
@@ -157,7 +194,7 @@
 
         </div>
 
-        <div class="col-md-4 box">
+        <div class="box">
 
           <!-- Modal Button -->
           <a id="gr" class="btn btn-lg pane" data-toggle="modal" data-toggle="modal" data-target="#grContent" onmouseover="changeColor(0, 'grtext')" onmouseout="changeColor(1, 'grtext')" onclick="centerModal('grContent', event)">
@@ -198,9 +235,8 @@
           </div>
           
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 box">
+
+        <div class="box">
 
           <!-- Modal Button -->
           <a id="av" class="btn btn-lg pane" data-toggle="modal" data-toggle="modal" data-target="#avContent" onmouseover="changeColor(0, 'avtext')" onmouseout="changeColor(1, 'avtext')" onclick="centerModal('avContent', event)">
@@ -243,7 +279,7 @@
 
         </div>
 
-        <div class="col-md-4 box">
+        <div class="box">
 
           <!-- Modal Button -->
           <a id="vrs" class="btn btn-lg pane" data-toggle="modal" data-toggle="modal" data-target="#vrsContent" onmouseover="changeColor(0, 'vrstext')" onmouseout="changeColor(1, 'vrstext')" onclick="centerModal('vrsContent', event)">
@@ -279,7 +315,7 @@
 
         </div>
 
-        <div class="col-md-4 box">
+        <div class="box">
 
           <!-- Modal Button -->
           <a id="ral" class="btn btn-lg pane" data-toggle="modal" data-toggle="modal" data-target="#ralContent" onmouseover="changeColor(0, 'raltext')" onmouseout="changeColor(1, 'raltext')" onclick="centerModal('ralContent', event)">
@@ -337,9 +373,8 @@
           </div>
 
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 box">
+
+        <div class="box">
 
           <!-- Modal Button -->
           <a id="pul" class="btn btn-lg pane" data-toggle="modal" data-toggle="modal" data-target="#pulContent" onmouseover="changeColor(0, 'pultext')" onmouseout="changeColor(1, 'pultext')" onclick="centerModal('pulContent', event)">
@@ -385,23 +420,13 @@
           </div>
 
         </div>
-
-        <div class="col-md-4 box">
-
-        </div>
-
-        <div class="col-md-4 box">
-          
-        </div>
-      </div>
     </div>
 
     <h1 id="sectiontitle">Writing</h1>
     <hr id="sectionbar">
 
     <div class="container">
-      <div class="row">
-        <div class="col-md-4 box">
+        <div class="box">
 
           <!-- Modal Button -->
           <a id="sw" class="btn btn-lg pane" data-toggle="modal" data-toggle="modal" data-target="#swContent" onmouseover="changeColor(0, 'swtext')" onmouseout="changeColor(1, 'swtext')" onclick="centerModal('swContent', event)">
@@ -424,14 +449,12 @@
                   <img src="files/writing/Images/fade-in.png" style="position:relative; width:100%; height: auto;">
                   <br><br>
                   <p>Literature Writing 110 instructed its students on proper screenwriting techniques. We watched and studied movies made as adaptations from written literature and participated in in-person talks with film industry professionals.</p>
+                  <a href="files/writing/screenwriting/final.pdf" target="_blank">
+                    - Pitch and excerpt from a 20-page short film.</a><br>
                   <a href="files/writing/screenwriting/bruges.pdf" target="_blank">
                     - Translating screen to script: 2 Scenes from <i>In Bruges</i>.</a><br>
                   <a href="files/writing/screenwriting/action.pdf" target="_blank">
-                    - Action Scene from hypothetical third series pilot of <i>Avatar</i>.</a><br>
-                  <a href="files/writing/screenwriting/abuse.pdf" target="_blank">
-                    - Silent Short depicting a family's struggle with abuse.</a><br>
-                  <a href="files/writing/screenwriting/final.pdf" target="_blank">
-                    - Pitch and excerpt from final submission.</a><br>
+                    - Action Scene from a hypothetical third series pilot of <i>Avatar</i>.</a><br>
                 </div>
                 <div class="modal-footer"></div>
               </div>
@@ -441,7 +464,7 @@
 
         </div>
 
-        <div class="col-md-4 box">
+        <div class="box">
 
           <!-- Modal Button -->
           <a id="vr" class="btn btn-lg pane" data-toggle="modal" data-toggle="modal" data-target="#vrContent" onmouseover="changeColor(0, 'vrtext')" onmouseout="changeColor(1, 'vrtext')" onclick="centerModal('vrContent', event)">
@@ -476,7 +499,7 @@
 
         </div>
 
-        <div class="col-md-4 box">
+        <div class="box">
 
           <!-- Modal Button -->
           <a id="ga" class="btn btn-lg pane" data-toggle="modal" data-toggle="modal" data-target="#gameContent" onmouseover="changeColor(0, 'gatext')" onmouseout="changeColor(1, 'gatext')" onclick="centerModal('gameContent', event)">
@@ -510,9 +533,8 @@
           </div>
           
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 box">
+
+        <div class="box">
 
           <!-- Modal Button -->
           <a id="add" class="btn btn-lg pane" data-toggle="modal" data-toggle="modal" data-target="#addContent" onmouseover="changeColor(0, 'addtext')" onmouseout="changeColor(1, 'addtext')" onclick="centerModal('addContent', event)">
@@ -549,40 +571,13 @@
           </div>
 
         </div>
-
-        <div class="col-md-4 box">
-
-          
-
-        </div>
-
-        <div class="col-md-4 box">
-
-          
-          
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 box">
-
-        </div>
-
-        <div class="col-md-4 box">
-
-        </div>
-
-        <div class="col-md-4 box">
-          
-        </div>
-      </div>
     </div>
 
     <h1 id="sectiontitle">Game Development</h1>
     <hr id="sectionbar">
 
     <div class="container">
-      <div class="row">
-        <div class="col-md-4 box" id="sparty">
+        <div class="box" id="sparty">
 
           <!-- Modal Button -->
           <a id="gb" class="btn btn-lg pane" data-toggle="modal" data-toggle="modal" data-target="#gbContent" onmouseover="changeColor(0, 'gbtext')" onmouseout="changeColor(1, 'gbtext')" onclick="centerModal('gbContent', event)">
@@ -603,7 +598,7 @@
                 </div>
                 <div class="modal-body">
                   <img src="files/games/gb/Designs/logo.png" style="position:relative; width:100%; height: auto;">
-                  <p>During my last few quarters at UCSD, I joined a small game development team so as to learn how UI work is applied to applications beyond websites and mobile apps. The casual group of students focused on mobile gaming. Having little experience in the field, I completed work in pre-production user interface design and collaborated on high concept game design ideas. Some of the work I did can be seen below:</p>
+                  <p>During my last few quarters at UCSD, I joined a small game development team so as to learn how UI elements are used in applications beyond websites and mobile apps. The casual group of students focused on mobile gaming. Having little experience in the field, I completed work in pre-production user interface design and collaborated on high concept game design ideas. Some of the work I did can be seen below:</p>
                   <a href="files/games/gb/Designs/comments.pdf" target="_blank">
                     - In-game UI and touch interaction zones with comments.</a><br>
                   <a href="files/games/gb/Designs/ui1.pdf" target="_blank">
@@ -619,7 +614,7 @@
 
         </div>
 
-        <div class="col-md-4 box">
+        <div class="box">
 
           <!-- Modal Button -->
           <a id="sp" class="btn btn-lg pane" data-toggle="modal" data-toggle="modal" data-target="#spartyContent" onmouseover="changeColor(0, 'spartytext')" onmouseout="changeColor(1, 'spartytext')" onclick="centerModal('spartyContent', event)">
@@ -652,37 +647,6 @@
           </div>
 
         </div>
-
-        <div class="col-md-4 box">
-          
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 box">
-
-        </div>
-
-        <div class="col-md-4 box">
-
-        </div>
-
-        <div class="col-md-4 box">
-
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 box">
-
-        </div>
-
-        <div class="col-md-4 box">
-
-        </div>
-
-        <div class="col-md-4 box">
-          
-        </div>
-      </div>
     </div>
 
   </body>
