@@ -1,0 +1,122 @@
+/* General Styling */
+
+* {
+	font-family: 'Catamaran', sans-serif !important;
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+}
+
+a {
+	color: steelblue;
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+	text-decoration: none;
+	font-size: 20px;
+	width: 60%;
+}
+
+a:hover {
+	color: #dddddd;
+	background: maroon;
+	box-shadow: 1px 2px 2px 1px maroon;
+	cursor: pointer;
+}
+
+p {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 18px;
+}
+
+.selected {
+	color: #dddddd;
+	background: indigo !important;
+	box-shadow: 1px 2px 2px 1px indigo !important;
+}
+
+.selected:hover {
+	background: indigo;
+}
+
+.contentbox {
+	width: 60%;
+	border: 1px solid slategray;
+	background-color: #dddddd;
+}
+
+.inlineButton {
+	display: inline;
+	border-radius: 5%;
+}
+
+/* Changing Element Attributes */
+
+#portkey {
+	position: relative;
+	width: 25%;
+	margin: auto;
+}
+
+#portkey:hover {
+	background-color: rgba(0,0,0,0) !important;
+	box-shadow: none;
+}
+
+#portkey img {
+	border: 2px solid indigo;
+}
+
+#portkey img:hover {
+	box-shadow: 3px 3px 6px indigo;
+}
+
+#colors {
+	width: 60%;
+	border: 1px solid slategray;
+}
+
+#toggleButton {
+	padding: 10px;
+	margin: 10px;
+}
+
+#scores {
+	width: 60%;
+}
+
+/* Footer content */
+.source {
+	width: 30%;
+	display: inline !important;
+	position: relative;
+	margin: 0 auto;
+	text-align: right;
+	float: right;
+}
+
+/* Classes to implement on different elements */
+.underline {
+	text-decoration: underline !important;
+}
+
+.big {
+	font-size: 60px;
+	font-weight: bold;
+}
+
+.box {
+	border: 3px solid steelblue;
+}
+
+.box:hover {
+	box-shadow: none !important;
+}
+
+.complete {
+	text-decoration: line-through;
+}

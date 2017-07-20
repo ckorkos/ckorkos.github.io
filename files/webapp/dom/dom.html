@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM Manipulation</title>
+	<link rel="stylesheet" type="text/css" href="dom.css"></link>
+
+	<!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran|Montserrat|Ubuntu" rel="stylesheet">
+</head>
+<body>
+	<h1>Selecting Page Elements</h1>
+	<br>
+	<h3>Retrieve the Boxed Element(s) Using:</h3>
+	<br>
+	<a href="#" onclick="select1()">An Element's ID</a>
+	<br>
+	<a href="#" onclick="select2()">Element Class Names</a>
+	<br>
+	<a href="#" onclick="select3()">Element Tag Names</a>
+	<br>
+	<a href="#" onclick="select4()">JS Query (Single Element, using ID)</a>
+	<br>
+	<a href="#" onclick="select5()">JS Query (Single Element, using Class)</a>
+	<br>
+	<a href="#" onclick="select6()">JS Query (All Elements, using Tag)</a>
+	<br>
+
+	<div class="contentbox">
+		<br>
+		<p id="first">This is an element with an ID.</p>
+		<br>
+		<p class="special">This is an element with a Class.</p>
+		<br>
+		<p class="special">This is another element with a Class.</p>
+		<br>
+	</div>
+
+	<br>
+
+	<h3>Change Element Styles and Text:</h3>
+	<br>
+	<a id="underline" onclick="change1()">I need something to stand on.</a>
+	<br>
+	<a id="grow" onclick="change2()">I need to reach something higher up.</a>
+	<br>
+	<a id="task" onclick="change3()">I have a task to finish.</a>
+	<br>
+	<a id="boxed" class="box" onclick="change4()">I just feel so boxed in.</a>
+	<br>
+	<hr>
+	<br><br>
+
+	<h1>Changing Element Attributes</h1>
+	<p>Functions getAttribute() and setAttribute() can read and write attributes like "src" and "href"</p>
+
+	<!-- Portkey Excercise -->
+	<br>
+	<p>I think I'll go to 
+		<span><a id="warts" class="inlineButton" onclick="switchPort(1)">Hogwarts</a></span> / 
+		<span><a id="meade" class="inlineButton" onclick="switchPort(2)">Hogsmeade</a></span> / 
+		<span><a id="burrow" class="inlineButton" onclick="switchPort(3)">The Burrow</a></span> for vacation.</p>
+	<br>
+	<a id="portkey" target="_blank"><img src="https://thebibliophilestruggle.files.wordpress.com/2015/08/portkey_boot.jpg" height="300"></a>
+	
+	<!-- Catdog Excercise -->
+	<br>
+	<p>I prefer <span><a class="inlineButton" onclick="animal(true)">cats</a></span> / <span><a class="inlineButton" onclick="animal(false)">dogs</a></span>!</p>
+	<br>
+	<img id="animalPic" src="http://www.publicdomainpictures.net/pictures/40000/velka/question-mark.jpg" height="300">
+	<br>
+	<hr>
+	<br><br>
+
+	<h1>Action Events</h1>
+
+	<br>
+	<h3>Color Swapper</h3>
+	<div id="colors">
+		<button id="toggleButton" onclick="toggle()">Change Color</button>
+	</div>
+	<br>
+	<h3>Score Keeper</h3>
+	<div style="border: 1px solid slategray; width: 50%; padding: 15px;">
+		<h2 id="scores"><span id="p1"></span> to <span id="p2"></span></h2>
+		<p id="scores">Playing to: <span id="max"></span></p>
+		<br>
+		<input type="text" name="scoreinput" id="maxscore" placeholder="I'm playing to...">
+		<br>
+		<button onclick="increase(1)">Player One</button>
+		<button onclick="increase(2)">Player Two</button>
+		<button onclick="reset()">Reset</button>
+	</div>
+
+	<script type="text/javascript" src="dom.js"></script>
+	<script type="text/javascript" src="toggle.js"></script>
+	<script type="text/javascript" src="score.js"></script>
+</body>
+<footer>
+	<br>
+	<hr>
+	<a class="source" href="dom.css">View CSS Source</a>
+	<br><br>
+	<a class="source" href="dom.js">View JavaScript Source</a>
+</footer>
+</html>
