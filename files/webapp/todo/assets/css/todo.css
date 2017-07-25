@@ -123,3 +123,34 @@ h1:first-child {
 	color: gray;
 	text-decoration: line-through;
 }
+
+/* Footer Styling */
+/* Footer content */
+footer, .push {
+	height: 500px;
+}
+
+.source {
+	color: steelblue;
+	width: 15%;
+	display: inline !important;
+	position: relative;
+	margin: 0 auto;
+	padding: 2px;
+	text-align: right;
+	float: right !important;
+	text-decoration: none;
+}
+
+.source:hover {
+	color: #dddddd;
+	background: steelblue;
+}
+
+.source:visited {
+	color: purple;
+}
+
+.source:visited:hover {
+	color: #dddddd;
+}
