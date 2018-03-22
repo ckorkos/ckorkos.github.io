@@ -204,11 +204,11 @@ function changeDivContent(stuff) {
       var mq = window.matchMedia("(max-width: 780px)");
       if(mq.matches) {
         // window width is less than 780 px
-        $("#loaded").css("height", "2400px");
+        $("#loaded").css("height", "2750px");
       }
       else {
         // window width is at least 780 px
-        $("#loaded").css("height", "1000px");
+        $("#loaded").css("height", "1300px");
       }
 
       $("#loaded").css("width", "94%");
