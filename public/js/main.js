@@ -148,7 +148,7 @@ function changeDivContent(stuff) {
       var mq = window.matchMedia("(max-width: 780px)");
       if(mq.matches) {
         // window width is less than 780 px
-        $("#loaded").css("height", "6100px");
+        $("#loaded").css("height", "6500px");
       }
       else {
         // window width is at least 780 px
