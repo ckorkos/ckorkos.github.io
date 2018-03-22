@@ -37,7 +37,7 @@ footer {
 }
 
 #ck {
-  font-size: 94px;
+  font-size: 70px;
 }
 
 #instalink {
@@ -86,7 +86,7 @@ footer {
 
 #header {
   color: rgba(200, 200, 200, 0.95);
-  background-color: #00043a;
+  background-color: #00043a !important;
   opacity: 0.8;
   position: relative;
   top: -75px;
