@@ -40,6 +40,12 @@ footer {
   font-size: 70px;
 }
 
+@media (max-width: 768px) {
+  #ck {
+    font-size: 45px;
+  }
+}
+
 #instalink {
   text-decoration: none;
   color: lightblue;
