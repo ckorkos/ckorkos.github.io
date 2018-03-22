@@ -113,9 +113,9 @@ function changeDivContent(stuff) {
           scrollTop: $("#pagefront").offset().top
       }, 500);
 
-      $("#edu").css("color", "#dddddd");
-      $("#pro").css("color", "#dddddd");
-      $("#exp").css("color", "#dddddd");
+      $("#exp").css("color", "rgb(0,1,30)");
+      $("#des").css("color", "rgb(0,1,30)");
+      $("#wri").css("color", "rgb(0,1,30)");
 
       $("#divider1").html(empty);
       $("#content").html(empty);
@@ -132,9 +132,9 @@ function changeDivContent(stuff) {
 
       $("#divider1").html("<hr>");
 
-      $("#edu").css("color", "#dddddd");
-      $("#pro").css("color", "#dddddd");
-      $("#exp").css("color", "orange");
+      $("#exp").css("color", "#FF4500");
+      $("#des").css("color", "rgb(0,1,30)");
+      $("#wri").css("color", "rgb(0,1,30)");
 
       document.getElementById("content").innerHTML=
         '<object id="loaded" type="text/html" data="experience.html"></object>';
@@ -145,14 +145,14 @@ function changeDivContent(stuff) {
       });
       */
 
-      var mq = window.matchMedia("(min-width: 780px)");
+      var mq = window.matchMedia("(max-width: 780px)");
       if(mq.matches) {
-        // window width is at least 780 px
-        $("#loaded").css("height", "2100px");
+        // window width is less than 780 px
+        $("#loaded").css("height", "6100px");
       }
       else {
-        // window width is less than 780 px
-        $("#loaded").css("height", "4150px");
+        // window width is at least 780 px
+        $("#loaded").css("height", "3900px");
       }
 
       $("#loaded").css("width", "94%");
@@ -161,7 +161,7 @@ function changeDivContent(stuff) {
       $("footer").css("position", "relative");
     }
   }
-  else if(stuff === "education") {
+  else if(stuff === "design") {
     if(clicked === 2) {
       clicked = 0;
 
@@ -169,9 +169,9 @@ function changeDivContent(stuff) {
           scrollTop: $("#pagefront").offset().top
       }, 500);
 
-      $("#edu").css("color", "#dddddd");
-      $("#pro").css("color", "#dddddd");
-      $("#exp").css("color", "#dddddd");
+      $("#exp").css("color", "rgb(0,1,30)");
+      $("#des").css("color", "rgb(0,1,30)");
+      $("#wri").css("color", "rgb(0,1,30)");
 
       $("#divider1").html(empty);
       $("#content").html(empty);
@@ -188,27 +188,27 @@ function changeDivContent(stuff) {
 
       $("#divider1").html("<hr>");
 
-      $("#edu").css("color", "orange");
-      $("#pro").css("color", "#dddddd");
-      $("#exp").css("color", "#dddddd");
+      $("#exp").css("color", "rgb(0,1,30)");
+      $("#des").css("color", "#FF4500");
+      $("#wri").css("color", "rgb(0,1,30)");
 
       document.getElementById("content").innerHTML=
-        '<object id="loaded" type="text/html" data="education.html"></object>';
+        '<object id="loaded" type="text/html" data="design.html"></object>';
       /* FINAL CODE USING JQUERY
-      $("#content").load("education.html", function(){
+      $("#content").load("projects.html", function(){
         $("object").attr["id", "loaded"];
         $("object").css("width", "100%");
       });
       */
 
-      var mq = window.matchMedia("(min-width: 780px)");
+      var mq = window.matchMedia("(max-width: 780px)");
       if(mq.matches) {
-        // window width is at least 780 px
-        $("#loaded").css("height", "1300px");
+        // window width is less than 780 px
+        $("#loaded").css("height", "2400px");
       }
       else {
-        // window width is less than 780 px
-        $("#loaded").css("height", "1800px");
+        // window width is at least 780 px
+        $("#loaded").css("height", "1000px");
       }
 
       $("#loaded").css("width", "94%");
@@ -217,7 +217,7 @@ function changeDivContent(stuff) {
       $("footer").css("position", "relative");
     }
   }
-  else if(stuff === "projects") {
+  else if(stuff === "writing") {
     if(clicked === 3) {
       clicked = 0;
 
@@ -225,9 +225,9 @@ function changeDivContent(stuff) {
           scrollTop: $("#pagefront").offset().top
       }, 500);
 
-      $("#edu").css("color", "#dddddd");
-      $("#pro").css("color", "#dddddd");
-      $("#exp").css("color", "#dddddd");
+      $("#exp").css("color", "rgb(0,1,30)");
+      $("#des").css("color", "rgb(0,1,30)");
+      $("#wri").css("color", "rgb(0,1,30)");
 
       $("#divider1").html(empty);
       $("#content").html(empty);
@@ -244,12 +244,12 @@ function changeDivContent(stuff) {
 
       $("#divider1").html("<hr>");
 
-      $("#edu").css("color", "#dddddd");
-      $("#pro").css("color", "orange");
-      $("#exp").css("color", "#dddddd");
+      $("#exp").css("color", "rgb(0,1,30)");
+      $("#des").css("color", "rgb(0,1,30)");
+      $("#wri").css("color", "#FF4500");
 
       document.getElementById("content").innerHTML=
-        '<object id="loaded" type="text/html" data="projects.html"></object>';
+        '<object id="loaded" type="text/html" data="writing.html"></object>';
       /* FINAL CODE USING JQUERY
       $("#content").load("projects.html", function(){
         $("object").attr["id", "loaded"];
@@ -257,14 +257,14 @@ function changeDivContent(stuff) {
       });
       */
 
-      var mq = window.matchMedia("(min-width: 780px)");
+      var mq = window.matchMedia("(max-width: 780px)");
       if(mq.matches) {
-        // window width is at least 780 px
-        $("#loaded").css("height", "2300px");
+        // window width is less than 780 px
+        $("#loaded").css("height", "1150px");
       }
       else {
-        // window width is less than 780 px
-        $("#loaded").css("height", "3200px");
+        // window width is at least 780 px
+        $("#loaded").css("height", "700px");
       }
 
       $("#loaded").css("width", "94%");
