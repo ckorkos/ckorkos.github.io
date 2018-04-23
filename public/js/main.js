@@ -113,6 +113,8 @@ function changeDivContent(stuff) {
           scrollTop: $("#pagefront").offset().top
       }, 500);
 
+      document.title = "Chris Korkos - UX Design & Writing";
+
       $("#exp").css("color", "rgb(0,1,30)");
       $("#des").css("color", "rgb(0,1,30)");
       $("#wri").css("color", "rgb(0,1,30)");
@@ -129,6 +131,8 @@ function changeDivContent(stuff) {
       $('html, body').animate({
           scrollTop: $("#midbar").offset().top
       }, 500);
+
+      document.title = "Work Experience";
 
       $("#divider1").html("<hr>");
 
@@ -169,6 +173,8 @@ function changeDivContent(stuff) {
           scrollTop: $("#pagefront").offset().top
       }, 500);
 
+      document.title = "Chris Korkos - UX Design & Writing";
+
       $("#exp").css("color", "rgb(0,1,30)");
       $("#des").css("color", "rgb(0,1,30)");
       $("#wri").css("color", "rgb(0,1,30)");
@@ -185,6 +191,8 @@ function changeDivContent(stuff) {
       $('html, body').animate({
           scrollTop: $("#midbar").offset().top
       }, 500);
+
+      document.title = "UX Design & Development";
 
       $("#divider1").html("<hr>");
 
@@ -225,6 +233,8 @@ function changeDivContent(stuff) {
           scrollTop: $("#pagefront").offset().top
       }, 500);
 
+      document.title = "Chris Korkos - UX Design & Writing";
+
       $("#exp").css("color", "rgb(0,1,30)");
       $("#des").css("color", "rgb(0,1,30)");
       $("#wri").css("color", "rgb(0,1,30)");
@@ -241,6 +251,8 @@ function changeDivContent(stuff) {
       $('html, body').animate({
           scrollTop: $("#midbar").offset().top
       }, 500);
+
+      document.title = "Writing";
 
       $("#divider1").html("<hr>");
 
