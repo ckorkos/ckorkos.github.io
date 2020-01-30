@@ -14,7 +14,7 @@ $(window).ready(function() {
 
 /*
   On scroll, check the window's position in relation to the page's
-  navigation bar. If it can be seen normally on the page (ie - located 
+  navigation bar. If it can be seen normally on the page (ie - located
   below the window's top) do nothing; otherwise fix it to the top.
 */
 $(window).scroll(function() {
@@ -156,7 +156,7 @@ function changeDivContent(stuff) {
       }
       else {
         // window width is at least 780 px
-        $("#loaded").css("height", "3900px");
+        $("#loaded").css("height", "1780px");
       }
 
       $("#loaded").css("width", "94%");
