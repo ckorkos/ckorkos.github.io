@@ -1,0 +1,514 @@
+* {
+	font-family: "Avenir";
+}
+
+header {
+	padding-left: 15%;
+	height: 250px;
+
+	background-image: url('../images/pics/beach-crop.png');
+	background-position: center;
+	background-size: cover;
+}
+
+section {
+	padding-top: 25px;
+	display: block;
+}
+
+h4 {
+	padding-top: 50px;
+}
+
+h5 {
+	padding-top: 15px;
+}
+
+.selected {
+	color: #FF7542 !important;
+}
+
+.highlight {
+	color: #DD360F;
+}
+
+.nav-link.active {
+	color: #FF7542 !important;
+}
+
+.stayOrange {
+	color: #FF7542 !important;
+}
+
+#social {
+	min-width: 150px;
+	text-decoration: none;
+}
+
+#social a {
+	padding: 4px;
+	padding-right: 10px;
+}
+
+#social a:last {
+	padding-right: 0px;
+}
+
+#nav-name {
+	display: none;
+	margin-left: 0 !important;
+}
+
+#logo-name {
+	margin-top: -75px;
+}
+
+#logo {
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	margin-top: -50px;
+	box-shadow: 0px 0px 3px #AA7631;
+	border-radius: 100px;
+	filter: blur(0px) !important;
+  	-webkit-filter: blur(0px) !important;
+}
+
+#name {
+	display: inline-block;
+	width: 80%;
+	margin-top: 10px;
+	filter: blur(0px) !important;
+  	-webkit-filter: blur(0px) !important;
+}
+
+#mainNav {
+	position: relative;
+	background-color: #333333;
+}
+
+#subNav {
+	position: relative;
+	height: 40px;
+	background-color: #4c535b !important;
+}
+
+#separator {
+	margin: 8px;
+	vertical-align: middle;
+	background-color: rgba(255,255,255,.5);
+	width: 1px;
+	height: 24px;
+}
+
+#email-list {
+	padding-top: 5px;
+}
+
+#linkedin-list {
+	padding-top: 5px;
+}
+
+.navbar-dark .navbar-toggler {
+	border: none;
+	outline: none;
+}
+
+.nav-item {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.subheader {
+	text-align: center;
+	font-weight: lighter;
+}
+
+.lead {
+	font-size: 16px;
+	margin-right: 0px;
+}
+
+#about img {
+	margin-top: 80px;
+}
+
+.custom-card {
+	color: #323333;
+	text-align: center;
+	position: relative;
+	top: 50%;
+	 -ms-transform: translateY(-50%);
+	 transform: translateY(-50%);
+}
+
+.custom-card:hover {
+	text-decoration: none;
+	color: #323333;
+}
+
+.card {
+	border: none;
+}
+
+.card-body-project {
+	padding-top: 100px !important;
+}
+
+.card-img-top {
+	filter: grayscale(100%);
+	transition: 0.3s;
+}
+
+.card-body-project {
+	padding-top: 80px;
+}
+
+.hide-button {
+	display: none;
+}
+
+.skillCard {
+	height: auto;
+	border: 5px solid #F8F9FA;
+	border-radius: 10px;
+}
+
+.skillCard .card-body {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.skillCard .card-text {
+	padding-left: 20px;
+}
+
+.skillIcon {
+	padding-top: 12px;
+	padding-left: 12px;
+	color: red;
+	font-size: 96px;
+}
+
+#yompDemo {
+	width: auto;
+	height: auto;
+	position: relative;
+	border-radius: 10px;
+}
+
+#yompDemo h5 {
+	text-align: center;
+	width: 70%;
+	margin-top: 22%;
+	margin-left: 15%;
+	padding: 3%;
+	color: white;
+	background-color: #343A40;
+	border-radius: 5px;
+}
+
+#yompDemo:hover h5 {
+	background-color: #FF7542 !important;
+}
+
+@media (max-width: 1200px) {
+	.card-body-project {
+		padding-top: 100px;
+	}
+	.skillIcon img {
+		height: 70px !important;
+		margin-top: 20px;
+		width: auto;
+	}
+}
+
+@media (max-width: 1000px) {
+	.card-body-project {
+		padding-top: 130px;
+	}
+	.card-body-project .card-title {
+		padding-top: 0px;
+	}
+}
+
+@media (max-width: 991px) {
+	#subNav {
+		display: none;
+	}
+	#email-list {
+		display: inline-block;
+	}
+	#linkedin-list {
+		display: inline-block;
+	}
+	.nav-item {
+		text-align: right;
+	}
+	.skillIcon img {
+		height: 40px !important;
+		margin-top: 40px;
+		width: auto;
+	}
+	#separator {
+		float: right !important;
+		margin-right: 0px;
+		height: 1px;
+		width: 75px;
+	}
+	#name {
+		width: 400px;
+	}
+	#yompDemo h5 {
+		width: 80%;
+		margin-top: 15%;
+		margin-left: 10%;
+		padding-top: 3%;
+		padding-bottom: 3%;
+		color: white;
+		background-color: #343A40;
+		border-radius: 5px;
+	}
+}
+
+@media (max-width: 770px) {
+	#back {
+		content: "<";
+	}
+	.skillIcon img {
+		height: 70px !important;
+		margin-top: 20px;
+		width: auto;
+	}
+}
+
+@media (max-width: 767px) {
+	.skillCard .col-md-3 {
+		text-align: center;
+	}
+	.skillCard .card-body {
+		padding-left: 20%;
+		padding-right: 20%;
+	}
+}
+
+@media (max-width: 730px) {
+	header {
+		max-height: 150px;
+		padding-top: 115px;
+		padding-bottom: 0px;
+	}
+	#logo {
+		width: 100px;
+		height: 100px;
+	}
+	.name-text {
+		font-size: 18px;
+	}
+	.title-text {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 615px) {
+	#logo {
+		margin-bottom: 20px;
+	}
+	#name {
+		width: 60%;
+		margin-top: 0px;
+	}
+}
+
+@media (max-width: 520px) {
+	#yompDemo h5 {
+		width: 80%;
+		margin-top: 20%;
+		margin-left: 10%;
+		padding-top: 3%;
+		padding-bottom: 3%;
+		color: white;
+		background-color: #343A40;
+		border-radius: 5px;
+	}
+}
+
+@media (max-width: 480px) {
+	header {
+		padding-left: 5%;
+	}
+	#logo-name {
+		padding-left: 10px;
+	}
+	.card-body-project {
+		padding-top: 120px;
+	}
+}
+
+@media (max-width: 400px) {
+	#yompDemo h5 {
+		width: 80%;
+		margin-top: 10%;
+		margin-left: 10%;
+		padding-top: 3%;
+		padding-bottom: 3%;
+		color: white;
+		background-color: #343A40;
+		border-radius: 5px;
+	}
+}
+
+@media (max-width: 360px) {
+	.name-text {
+		font-size: 18px;
+	}
+	.title-text {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 320px) {
+	header {
+		height: 120px;
+	}
+	#nav-name {
+		font-size: 18px;
+		width: 180px;
+		padding-right: 0;
+		padding-left: 0;
+	}
+	#nav-name img {
+		width: 25px;
+		height: 25px;
+	}
+	#logo {
+		margin-top: -30px;
+	}
+	#name {
+		margin-top: -10px;
+	}
+	.name-text {
+		font-size: 16px;
+	}
+	.title-text {
+		font-size: 12px;
+	}
+}
+
+/* Image Modal */
+.modal {
+  /* some styles to position the modal at the center of the page */
+  position: fixed;
+	top: 5%;
+  left: 2%;
+	width: 96%;
+	height: 90vh;
+  
+  /* needed styles for the overlay */
+	/* keep on top of other elements on the page */
+  z-index: 1000000;
+	
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10+ and Edge */
+  user-select: none; /* Standard syntax */
+}
+
+.modal .modal-content, .modalSlides div {
+	height: 100%;
+}
+
+.modalSlides {
+	height: 90%;
+	text-align: center;
+}
+
+.displaySlides p {
+	text-align:left;
+	padding-top:20px;
+	padding-right:30%;
+	padding-left:30%;
+}
+
+.modal .display-image {
+	position: relative;
+	max-height: 70vh;
+	max-width: 95%;
+	height: auto;
+	width: auto;
+}
+
+.modalNav {
+	text-align: center;
+	padding-top: auto;
+	padding-bottom: auto;
+}
+
+.switch {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	bottom: 5%;
+	margin: auto;
+}
+
+#prev {
+	text-align: left;
+	padding-left: 5%;
+	float: left;
+}
+
+#prev:hover {
+	cursor: pointer;
+}
+
+#next {
+	text-align: right;
+	padding-right: 5%;
+	float: right;
+}
+
+#next:hover {
+	cursor: pointer;
+}
+
+.dot {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 10px;
+	padding-bottom: 2px;
+	background-color: #C1C1C1;
+	width: 10px;
+	height: 10px;
+	border-radius: 100px;
+}
+
+.slideNum:hover {
+	cursor: pointer;
+}
+
+.slideNum:hover .dot {
+	background-color: #CCCDCF;
+}
+
+.current {
+	background-color: #FF7542 !important;
+}
+
+.thumbnail-container {
+	padding: 0 !important;
+}
+
+.thumbnail:hover {
+	cursor: zoom-in;
+}
+
+.close {
+	text-align: right;
+	padding-top: 10px;
+	padding-right: 15px;
+	font-size: 24px;
+}
+
+.close:hover {
+	cursor: pointer;
+}
