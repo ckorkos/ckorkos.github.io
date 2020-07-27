@@ -13,6 +13,7 @@ header {
 
 section {
 	padding-top: 25px;
+	padding-bottom: 50px;
 	display: block;
 }
 
@@ -127,6 +128,10 @@ h5 {
 .lead {
 	font-size: 16px;
 	margin-right: 0px;
+}
+
+#work .row {
+	padding-bottom: 0 !important;
 }
 
 #about img {
