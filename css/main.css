@@ -1,5 +1,5 @@
 * {
-	font-family: "Avenir";
+	font-family: "Avenir", sans-serif;
 }
 
 header {
@@ -13,7 +13,6 @@ header {
 
 section {
 	padding-top: 25px;
-	padding-bottom: 50px;
 	display: block;
 }
 
@@ -130,10 +129,6 @@ h5 {
 	margin-right: 0px;
 }
 
-#work .row {
-	padding-bottom: 0 !important;
-}
-
 #about img {
 	margin-top: 80px;
 }
@@ -142,6 +137,9 @@ h5 {
 	color: #323333;
 	text-align: center;
 	position: relative;
+	top: 50%;
+	 -ms-transform: translateY(-50%);
+	 transform: translateY(-50%);
 }
 
 .custom-card:hover {
@@ -154,8 +152,7 @@ h5 {
 }
 
 .card-body-project {
-	padding-top: 20px !important;
-	margin-bottom: 50px;
+	padding-top: 100px !important;
 }
 
 .card-img-top {
