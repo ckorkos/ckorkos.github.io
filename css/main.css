@@ -24,6 +24,14 @@ h5 {
 	padding-top: 15px;
 }
 
+.indent {
+	margin-left: 20px;
+}
+
+.indent::marker {
+	color: gray;
+}
+
 .selected {
 	color: #FF7542 !important;
 }
@@ -38,6 +46,27 @@ h5 {
 
 .stayOrange {
 	color: #FF7542 !important;
+}
+
+.caseTable {
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+.caseTable th {
+	color: white;
+	background-color: #343a40;
+	font-weight: normal;
+	padding: 8px;
+}
+
+.caseTable tr:nth-child(even) td {
+	background-color: white;
+}
+
+.caseTable td {
+	background-color: #a0a9b2;
+	padding: 8px;
 }
 
 #social {
