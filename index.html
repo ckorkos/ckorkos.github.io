@@ -1,462 +1,239 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
+    <!-- Responsive Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <title>UX Design | Christopher Korkos</title>
+    <link rel="icon" type="image/x-icon" href="images/icons/ck-logo.ico">
 
-  <link rel="icon" href="images/icons/waveLight.ico">
+    <!-- Font: Avenir -->
+    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
 
-  <title>Chris Korkos - UX Design</title>
+    <!-- Font: Fondamento -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fondamento&display=swap" rel="stylesheet">
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font: Megrim -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
 
-  <!-- Custom styles for this template -->
-  <link href="css/scrolling-nav.css" rel="stylesheet">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/main.css">
 
-  <!-- Main CSS file -->
-  <link href="css/main.css" rel="stylesheet">
+    <!-- jQuery Files -->
+    <script src="js/jquery-3.6.4.js"></script>
 
-  <!-- Font Styles -->
-  <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+    <!-- Javascript Files -->
+    <script src="js/main.js"></script>
 
-  <!-- jQuery Online Link -->
-  <script 
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"></script>
-
-  <script type="text/javascript" src="js/main.js"></script>
+    <!-- Preloaded Images
+    <link rel="preload" as="image" href="files/images/thumbnails/skywind-thumb-hover.png" /> -->
 </head>
 
-<body id="page-top">
+<body>
+    <!-- Navbar -->
+    <div id="nav-parent">
+        <div id="navbar" class="nav">
+            <div class="item-left">
+                <a href="#">
+                    <img class="site-icon" src="images/icons/ck-logo.ico" alt="Site Icon">
+                    <span><b>Christopher</b> Korkos</span>
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="#">
+                    Home
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="#projects">
+                    Projects
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="#about">
+                    About Me
+                </a>
+            </div>
+            <div class="item-right">
+                |
+            </div>
+            <div class="item-right">
+                <a href="files/resume.pdf" target="_blank">
+                    Resume
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="https://www.linkedin.com/in/chkorkos/" target="_blank">
+                    <img src="images/icons/linkedin-light.png" alt="LinkedIn">
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="mailto:chkorkos@gmail.com" target="_blank">
+                    <img src="images/icons/mail-light.png" alt="Email">
+                </a>
+            </div>    
+        </div>
 
-  <header class="bg-primary text-white">
-    <div id="bg-img"></div>
+        <div id="navbar-collapse" class="nav">
+            <div class="item-left">
+                <img class="site-icon" src="files/images/general/waveLight.ico" alt="Site Icon">
+                <span><b>Christopher</b> Korkos</span>
+            </div>
 
-    <div id="logo-name">
-      <img id="logo" src="images/icons/wave.png">
+            <div class="project-tab-hamburger">
+                <a href="javascript:void(0);" onclick="openHamburgerMain()">
+                    <img src="files/images/general/hamburger-wt.svg" alt="Hamburger Icon">
+                </a>
+            </div>
 
-      <div id="name" class="container text-left">
-        <h1 class="name-text"><b>Christopher</b> Korkos</h1>
-        <p class="lead title-text">User Experience Designer | Seattle, Washington</p>
-      </div>
+            <div class="project-tab-close">
+                <a href="javascript:void(0);" onclick="closeHamburgerMain()">
+                    <img src="files/images/general/close-wt.svg" alt="Close Icon">
+                </a>
+            </div>
+        
+        </div>
+
+        <!-- Main Hamburger Menu -->
+        <div class="hamburger-menu-main">
+            <div id="home-link" class="menu-option">
+                <a href="#" onclick="closeHamburgerMain()">
+                    Home
+                </a>
+            </div>
+            <div id="projects-link" class="menu-option">
+                <a href="#projects" onclick="closeHamburgerMain()">
+                    Projects
+                </a>
+            </div>
+            <div id="about-link" class="menu-option">
+                <a href="#about" onclick="closeHamburgerMain()">
+                    About Me
+                </a>
+            </div>
+
+            <div>
+                <hr>
+            </div>
+
+            <div id="resume-link" class="menu-option">
+                <a href="javascript:void(0);" onclick="closeHamburgerMain()">
+                    Resume
+                </a>
+            </div>
+
+            <div class="icons-collapse">
+                <div class="item-right">
+                    <a 
+                        href="https://www.linkedin.com/in/chkorkos/" 
+                        onclick="closeHamburgerMain()" 
+                        target="_blank">
+                        <img src="files/images/general/LinkedIn.png" alt="LinkedIn">
+                    </a>
+                </div>
+                <div class="item-right">
+                    <a 
+                        href="mailto:chkorkos@gmail.com" 
+                        onclick="closeHamburgerMain()" 
+                        target="_blank">
+                        <img src="files/images/general/Email.png" alt="Email">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Name and Roles -->
+    <div id="name">
+        <h1>
+            Christopher Korkos
+        </h1>
+        <h4>
+            UX Design & Writing | Seattle, Washington
+        </h4>
+    </div>
+
+    <hr class="homepage-hr">
+
+    <!-- Projects -->
+    <div id="projects" class="home-section">
+
+        <!-- Projects Title -->
+        <h3 class="section-header">
+            Projects
+        </h3>
+
+        <!-- Help Text -->
+        <!-- <h5 class="section-subheader">
+            Click to view a project.
+        </h5> -->
+
+        <!-- Pacific Science & Engineering -->
+        <div id="pse" class="project-card">
+            <a href="./html/pse.html" onmouseover="changeBG('pse-image')" onmouseout="revertBG('pse-image')">
+                <div id="pse-card-text">
+                    <h3>
+                        Pacific Science & Engineering
+                    </h3>
+                    <h3>
+                        Role: Visual/UX Designer
+                    </h3>
+                    <h3>
+                        May 2018 - December 2020
+                    </h3>
+                </div>
+                <img id="pse-image" src="images/pics/pse-thumb.png" alt="">
+            </a>
+        </div>
+
+        <!-- Independent Projects -->
+        <div id="other" class="project-card">
+            <a href="./html/other.html" onmouseover="changeBG('other-image')" onmouseout="revertBG('other-image')">
+                <div id="other-card-text">
+                    <h3>
+                        Independent Projects
+                    </h3>
+                    <h3>
+                        Roles: UX Designer, Researcher
+                    </h3>
+                </div>
+                <img id="other-image" src="images/icons/projects.png" alt="">
+            </a>
+        </div>
 
     </div>
-  </header>
 
-  <!-- Navigation 1 -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-    <div class="container">
+    <hr class="homepage-hr">
 
-      <a id="nav-name" class="navbar-brand js-scroll-trigger mx-auto" href="#page-top">
-        <img src="images/icons/wave.png" width="30px" height="30px" align="left" style="margin-right: 10px;">
-        <text><b>Christopher</b> Korkos</text>
-      </a>
+    <!-- About Me -->
+    <div id="about" class="home-section">
 
-      <button class="navbar-toggler ml-auto float-xs-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a id="homeButton" class="nav-link js-scroll-trigger" href="#page-top">
-              Home
-            </a>
-          </li>
-          <li class="nav-item">
-            <a id="workButton" class="nav-link js-scroll-trigger" href="#work">
-              Projects
-            </a>
-          </li>
-          <li class="nav-item">
-            <a id="toolsButton" class="nav-link js-scroll-trigger" href="#tools">
-              Design Tools
-            </a>
-          </li>
-          <li class="nav-item">
-            <a id="aboutButton" class="nav-link js-scroll-trigger" href="#about">
-              About
-            </a>
-          </li>
-          <li class="nav-item">
-            <!-- Vertical Line Separator -->
-            <div id="separator"></div>
-          </li>
-          <li class="nav-item">
-            <a id="resumeButton" class="nav-link js-scroll-trigger" href="files/resume.pdf" target="_blank">
-              Resume
-            </a>
-          </li>
-          <li class="nav-item">
-            <a id="email-list" class="nav-link js-scroll-trigger" href="mailto:chkorkos@gmail.com" target="_blank">
-              <img src="images/icons/mail-light.png" width="30px" height="30px">
-            </a>
-          </li>
-          <li class="nav-item">
-            <a id="linkedin-list" class="nav-link js-scroll-trigger" href="https://www.linkedin.com/in/chkorkos" target="_blank">
-              <img src="images/icons/linkedin-light.png" width="30px" height="30px">
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <section id="intro" style="padding-bottom: 0px;">
-    <div class="container">
-
-      <!-- Intro -->
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h3 style="font-weight: normal; text-align: center;">
-            Hi, I'm Chris
-          </h3>
-          <p class="lead" style="padding-top: 20px;">I’m a UX Designer with experience designing commercial, government, and independent digital products. As a designer, I find purpose in creating attractive and innovative digital tools.</p>
-
-          <p class="lead">I believe that a multidisciplinary approach is most effective when building solutions to design challenges. While I specialize in user experience design, I also employ visual design and front-end development to build accessible, intuitive, and functional interfaces.</p>
-        </div>
-      </div>
-
-  </section>
-
-  <section id="work">
-    <div class="container">
-
-      <hr>
-
-      <!-- Project Cards -->
-      <h4 style="font-weight: normal; text-align: center; padding-top: 25px;">
-        Projects
-      </h4>
-
-      <div class="row" style="padding-bottom: 50px; padding-top: -30px;">
-
-        <a href="html/sundial.html" class="custom-card" style="z-index:999;">
-          <div class="col-md-4 card">
-            <img class="card-img-top" src="images/icons/privacy.png" alt="Card image cap">
-            <div class="card-body card-body-project">
-              <h5 class="card-title">Sundial</h5>
-              <p class="card-text">Settings Panel for Mission Manager A.I.</p>
-              <a href="#" class="btn btn-primary hide-button">Go somewhere</a>
-            </div>
-          </div>
-        </a>
-
-        <a href="html/enterprise.html" class="custom-card" style="z-index:998;">
-          <div class="col-md-4 card">
-            <img class="card-img-top" src="images/icons/risk_dial.png" alt="Card image cap">
-            <div class="card-body card-body-project">
-              <h5 class="card-title">Enterprise</h5>
-              <p class="card-text">Decision Aid for Exploratory Efforts</p>
-              <a href="#" class="btn btn-primary hide-button">Go somewhere</a>
-            </div>
-          </div>
-        </a>
-
-        <a href="html/marathon.html" class="custom-card" style="z-index:997;">
-          <div class="col-md-4 card">
-            <img class="card-img-top" src="images/icons/hexagons.png" alt="Card image cap">
-            <div class="card-body card-body-project">
-              <h5 class="card-title">Marathon</h5>
-              <p class="card-text">Approval System for Mission Planning</p>
-              <a href="#" class="btn btn-primary hide-button">Go somewhere</a>
-            </div>
-          </div>
-        </a>
-
-        <a href="html/audible.html" class="custom-card" style="z-index:996;">
-          <div class="col-md-4 card">
-            <img class="card-img-top" src="images/icons/audible_redesign.png" alt="Card image cap">
-            <div class="card-body card-body-project">
-              <h5 class="card-title">Amazon Audible</h5>
-              <p class="card-text">Independent App Redesign</p>
-              <a href="#" class="btn btn-primary hide-button">Go somewhere</a>
-            </div>
-          </div>
-        </a>
-
-        <!-- Paper Link: https://journals.sagepub.com/doi/pdf/10.1177/1071181319631011 -->
-        <a href="html/spotify.html" class="custom-card" style="z-index:995;">
-          <div class="col-md-4 card">
-            <img class="card-img-top" src="images/icons/spotify_graph.png" alt="Card image cap">
-            <div class="card-body card-body-project">
-              <h5 class="card-title">Spotify</h5>
-              <p class="card-text">Independent Usability Study</p>
-              <a href="#" class="btn btn-primary hide-button">Go somewhere</a>
-            </div>
-          </div>
-        </a>
-
-        <a href="html/other.html" class="custom-card" style="z-index:994;">
-          <div class="col-md-4 card">
-            <img class="card-img-top" src="images/icons/projects.png" alt="Card image cap">
-            <div class="card-body card-body-project">
-              <h5 class="card-title">Other Projects</h5>
-              <p class="card-text">UX Design and Web Development</p>
-              <a href="#" class="btn btn-primary hide-button">Go somewhere</a>
-            </div>
-          </div>
-        </a>
-
-      </div>
-
-    </div>
-  </section>
-
-  <section id="tools" class="bg-light">
-    <div class="container">
-
-      <div class="row">
-        <div class="col-lg-10 mx-auto">
-          <h4 style="font-weight: normal; text-align: center; margin-bottom: 60px;">
-            My Design Tools
-          </h4>
-        </div>
-      </div>
-      
-      <div class="row">
-        <div class="card mb-3 col-md-6 skillCard">
-          <div class="row no-gutters">
-            <div class="col-md-3">
-              <div class="skillIcon" style="height:100px; display:inline-block;">
-                <img src="images/company-icons/sketch-64-761711.png" draggable="false" width="100px" style="vertical-align:top !important;">
-              </div>
-            </div>
-            <div class="col-md-9">
-              <div class="card-body">
-                <h5 class="card-title">Sketch</h5>
-                <ul class="card-text">
-                  <li>High-Fidelity UI, Graphic, and Icon Design</li>
-                  <li>Interactive Mockup Building</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="card mb-3 col-md-6 skillCard">
-          <div class="row no-gutters">
-            <div class="col-md-3">
-              <div class="skillIcon" style="height:100px; display:inline-block;">
-                <img src="images/company-icons/ico-desktop-lg.png" draggable="false" width="100px" style="vertical-align:top !important;">
-              </div>
-            </div>
-            <div class="col-md-9">
-              <div class="card-body">
-                <h5 class="card-title">Balsamiq</h5>
-                <ul class="card-text">
-                  <li>Rapid Low-Fidelity Wireframing</li>
-                  <li>User Testing with Paper Prototypes</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="card mb-3 col-md-6 skillCard">
-          <div class="row no-gutters">
-            <div class="col-md-3">
-              <div class="skillIcon" style="height:100px; display:inline-block;">
-                <img src="images/company-icons/adobe-illustrator-svgrepo-com.svg" draggable="false" width="100px" style="vertical-align:top !important;">
-              </div>
-            </div>
-            <div class="col-md-9">
-              <div class="card-body">
-                <h5 class="card-title">Adobe Illustrator</h5>
-                <ul class="card-text">
-                  <li>High-Fidelity UI, Graphic, and Icon Design</li>
-                  <li>Creative Illustration</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-          
-        <div class="card mb-3 col-md-6 skillCard">
-          <div class="row no-gutters">
-            <div class="col-md-3">
-              <div class="skillIcon" style="height:100px; display:inline-block;">
-                <img src="images/company-icons/adobe-photoshop-logo-svgrepo-com.svg" draggable="false" width="100px" style="vertical-align:top !important;">
-              </div>
-            </div>
-            <div class="col-md-9">
-              <div class="card-body">
-                <h5 class="card-title">Adobe Photoshop</h5>
-                <ul class="card-text">
-                  <li>Direct Redesign of Existing Graphics</li>
-                  <li>Creative Illustration</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="card mb-3 col-md-6 skillCard">
-          <div class="row no-gutters">
-            <div class="col-md-3">
-              <div class="skillIcon" style="height:100px; display:inline-block;">
-                <img src="images/company-icons/Adobe_XD_CC_icon.svg" draggable="false" width="100px" style="vertical-align:top !important;">
-              </div>
-            </div>
-            <div class="col-md-9">
-              <div class="card-body">
-                <h5 class="card-title">Adobe Xd</h5>
-                <ul class="card-text">
-                  <li>Mid- to High-Fidelity UI Design and Interactive Mockup Building, used in parallel with Illustrator</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-          
-        <div class="card mb-3 col-md-6 skillCard">
-          <div class="row no-gutters">
-            <div class="col-md-3">
-              <div class="skillIcon" style="height:100px; display:inline-block;">
-                <img src="images/company-icons/microsoft-powerpoint-2013-logo-svgrepo-com.svg" draggable="false" width="100px" style="vertical-align:top !important;">
-              </div>
-            </div>
-            <div class="col-md-9">
-              <div class="card-body">
-                <h5 class="card-title">Microsoft PowerPoint</h5>
-                <ul class="card-text">
-                  <li>Presentation of Designs & Use Case Stories</li>
-                  <li>Workflow Building</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="card mb-3 col-md-6 skillCard">
-          <div class="row no-gutters">
-            <div class="col-md-3">
-              <div class="skillIcon" style="height:100px; display:inline-block;">
-                <img src="images/company-icons/microsoft-excel-2013-logo-svgrepo-com.svg" draggable="false" width="100px" style="vertical-align:top !important;">
-              </div>
-            </div>
-            <div class="col-md-9">
-              <div class="card-body">
-                <h5 class="card-title">Microsoft Excel & R Programming</h5>
-                <ul class="card-text">
-                  <li>Data Analysis & Presentation</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-          
-        <div class="card mb-3 col-md-6 skillCard">
-          <div class="row no-gutters">
-            <div class="col-md-3">
-              <div class="skillIcon" style="height:100px; display:inline-block;">
-                <img src="images/company-icons/html-svgrepo-com.svg" draggable="false" width="100px" style="vertical-align:top !important;">
-              </div>
-            </div>
-            <div class="col-md-9">
-              <div class="card-body">
-                <h5 class="card-title">HTML & CSS</h5>
-                <ul class="card-text">
-                  <li>Front-End Web Development</li>
-                  <li>Desktop App Development</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="card mb-3 col-md-6 skillCard">
-          <div class="row no-gutters">
-            <div class="col-md-3">
-              <div class="skillIcon" style="height:100px; display:inline-block;">
-                <img src="images/company-icons/javascript-logo-svgrepo-com.svg" draggable="false" width="100px" style="vertical-align:top !important;">
-              </div>
-            </div>
-            <div class="col-md-9">
-              <div class="card-body">
-                <h5 class="card-title">JavaScript & jQuery</h5>
-                <ul class="card-text">
-                  <li>Programming Interactive Web Applications</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-          
-        <div class="card mb-3 col-md-6 skillCard">
-          <div class="row no-gutters">
-            <div class="col-md-3">
-              <div class="skillIcon" style="height:100px; display:inline-block;">
-                <img src="images/company-icons/pencil-svgrepo-com.svg" draggable="false" width="100px" style="vertical-align:top !important;">
-              </div>
-            </div>
-            <div class="col-md-9">
-              <div class="card-body">
-                <h5 class="card-title">Pen & Paper</h5>
-                <ul class="card-text">
-                  <li>Rapid Low-Fidelity Wireframing</li>
-                  <li>User Testing with Paper Prototypes</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-      </div>
-
-    </div>
-  </section>
-
-  <section id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-
-          <h4 style="font-weight: normal; text-align: center; margin-bottom: 60px;">
+        <!-- TODO: Projects Title -->
+        <h3 class="section-header">
             About Me
-          </h4>
-          
-          <div class="card">
-            <img src="images/pics/headshot.jpg" class="card-img" style="max-height:300px; max-width: 308px; height:auto; width:auto; display:block; margin:auto;" alt="...">
-            <div class="card-body">
-              <p class="card-text">
-                I discovered Human-Computer Interaction through a Cognitive Ethnography course at the University of California, San Diego. The class assigned students to observe people performing everyday tasks - everything from studying in public libraries to conducting music - and use the data to analyze the decision-making involved at each step. I'd always had an interest in psychology and cognitive science, and I was captivated by the practical application that these fields have in designing tools and systems. I will use my time in this profession to help people keep pace with the rapid advancement of technology in order to improve everyday life.
-                <br>
-                <br>
-                Email me at <a href="mailto:chkorkos@gmail.com">chkorkos@gmail.com</a> to learn more about my design career, work and freelance availability, favorite professional boxers, or Star Wars movie ranking.
-              </p>
-            </div>
-          </div>
+        </h3>
 
+        <div id="about-picture">
+            <img src="images/pics/headshot.jpg" alt="profile-picture"/>
         </div>
-      </div>
-    </div>
-  </section>
+        <div id="about-text">
+            <p class="lead" style="padding-top: 20px;">I’m a UX Designer with experience designing commercial, government, and independent digital products. As a designer, I find purpose in creating attractive and innovative digital tools.</p>
 
-  <!-- Footer -->
+            <p class="lead">I believe that a multidisciplinary approach is most effective when building solutions to design challenges. While I specialize in user experience design, I also employ visual design and front-end development to build accessible, intuitive, and functional interfaces.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
       <p class="m-0 text-center text-white">&copy; Christopher Korkos 2020</p>
     </div>
     <!-- /.container -->
   </footer>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom JavaScript for this theme -->
-  <script src="js/scrolling-nav.js"></script>
-
 </body>
 
 </html>
