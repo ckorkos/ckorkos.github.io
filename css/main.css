@@ -652,6 +652,21 @@ button:hover {
     display: flex !important;
 }
 
+.enterprise-images-1 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.enterprise-images div {
+    width: fit-content;
+}
+
+.enterprise-images img {
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+}
+
 /* Page Content */
 .content-group {
     display: flex;
