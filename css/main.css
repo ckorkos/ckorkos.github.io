@@ -596,6 +596,8 @@ button:hover {
     padding-right: 10%;
     padding-bottom: 8px;
     overflow: hidden;
+
+    background-color: #1A1A1A;
 }
 
 .hamburger-menu-main a {
