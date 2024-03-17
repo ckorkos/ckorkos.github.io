@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <link rel="icon" href="../images/icons/waveLight.ico">
+  <link rel="icon" href="../images/icons/ck-logo.ico">
 
   <title>Chris Korkos - UX Design</title>
 
@@ -24,6 +24,11 @@
   <!-- Font Styles -->
   <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
 
+  <!-- Font: Megrim -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
+
   <!-- jQuery Online Link -->
   <script 
     src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -36,114 +41,129 @@
 
 <body id="page-top" data-spy="scroll" data-target="#mainNav">
 
-  <header class="bg-primary text-white">
-    <div id="bg-img"></div>
-
-    <div id="logo-name">
-      <img id="logo" src="../images/icons/wave.png">
-
-      <div id="name" class="container text-left">
-        <h1 class="name-text"><b>Christopher</b> Korkos</h1>
-        <p class="lead title-text">User Experience Designer | Seattle, Washington</p>
-      </div>
-
+  <!-- Navbar -->
+  <div id="nav-parent">
+    <div id="navbar" class="nav">
+        <div class="item-left">
+            <a href="../index.html">
+                <img class="site-icon" src="../images/icons/ck-logo.ico" alt="Site Icon">
+                <span><b>Christopher</b> Korkos</span>
+            </a>
+        </div>
+        <div class="item-right">
+            <a href="../index.html">
+                Home
+            </a>
+        </div>
+        <div class="item-right">
+            <a href="../index.html#projects">
+                Projects
+            </a>
+        </div>
+        <div class="item-right">
+            <a href="../index.html#about">
+                About Me
+            </a>
+        </div>
+        <div class="item-right">
+            |
+        </div>
+        <div class="item-right">
+            <a href="../files/resume.pdf" target="_blank">
+                Resume
+            </a>
+        </div>
+        <div class="item-right">
+            <a href="https://www.linkedin.com/in/chkorkos/" target="_blank">
+                <img src="../images/icons/linkedin-light.png" alt="LinkedIn">
+            </a>
+        </div>
+        <div class="item-right">
+            <a href="mailto:chkorkos@gmail.com" target="_blank">
+                <img src="../images/icons/mail-light.png" alt="Email">
+            </a>
+        </div>    
     </div>
-  </header>
 
-  <!-- Navigation 1 -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-    <div class="container">
+    <div id="navbar-collapse" class="nav">
+        <div class="item-left">
+            <img class="site-icon" src="../images/icons/ck-logo.ico" alt="Site Icon">
+            <span>
+                <b>Christopher</b> Korkos
+            </span>
+        </div>
 
-      <a id="nav-name" class="navbar-brand js-scroll-trigger mx-auto" href="#page-top">
-        <img src="../images/icons/wave.png" width="30px" height="30px" align="left" style="margin-right: 10px;">
-        <text><b>Christopher</b> Korkos</text>
-      </a>
+        <div class="project-tab-hamburger">
+            <a href="javascript:void(0);" onclick="openHamburgerMain()">
+                <img src="../files/images/general/hamburger-wt.svg" alt="Hamburger Icon">
+            </a>
+        </div>
 
-      <button class="navbar-toggler ml-auto float-xs-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a id="homeButton" class="nav-link js-scroll-trigger" href="../index.html">
-              Home
+        <div class="project-tab-close">
+            <a href="javascript:void(0);" onclick="closeHamburgerMain()">
+                <img src="../files/images/general/close-wt.svg" alt="Close Icon">
             </a>
-          </li>
-          <li class="nav-item">
-            <a id="workButton" class="nav-link js-scroll-trigger stayOrange" href="../index.html#work">
-              Projects
-            </a>
-          </li>
-          <li class="nav-item">
-            <a id="toolsButton" class="nav-link js-scroll-trigger" href="../index.html#tools">
-              Design Tools
-            </a>
-          </li>
-          <li class="nav-item">
-            <a id="aboutButton" class="nav-link js-scroll-trigger" href="../index.html#about">
-              About
-            </a>
-          </li>
-          <li class="nav-item">
-            <!-- Vertical Line Separator -->
-            <div id="separator"></div>
-          </li>
-          <li class="nav-item">
-            <a id="resumeButton" class="nav-link js-scroll-trigger" href="../files/resume.pdf" target="_blank">
-              Resume
-            </a>
-          </li>
-          <li class="nav-item">
-            <a id="email-list" class="nav-link js-scroll-trigger" href="mailto:chkorkos@gmail.com" target="_blank">
-              <img src="../images/icons/mail-light.png" width="30px" height="30px">
-            </a>
-          </li>
-          <li class="nav-item">
-            <a id="linkedin-list" class="nav-link js-scroll-trigger" href="https://www.linkedin.com/in/chkorkos" target="_blank">
-              <img src="../images/icons/linkedin-light.png" width="30px" height="30px">
-            </a>
-          </li>
-        </ul>
-      </div>
+        </div>
+    
     </div>
-  </nav>
 
-  <!-- Navigation 2 -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="subNav">
-    <div class="container">
+    <!-- Main Hamburger Menu -->
+    <div class="hamburger-menu-main">
+        <div id="home-link" class="menu-option">
+            <a href="../index.html">
+                Home
+            </a>
+        </div>
+        <div id="projects-link" class="menu-option">
+            <a href="../index.html#projects">
+                Projects
+            </a>
+        </div>
+        <div id="about-link" class="menu-option">
+            <a href="../index.html#about">
+                About
+            </a>
+        </div>
 
-      <a id="nav-name" class="navbar-brand js-scroll-trigger mx-auto" href="#page-top">
-        <img src="../images/icons/wave.png" width="30px" height="30px" align="left" style="margin-right: 10px;">
-        <text><b>Christopher</b> Korkos</text>
-      </a>
+        <div>
+            <hr>
+        </div>
 
-      <button class="navbar-toggler ml-auto float-xs-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <div id="resume-link" class="menu-option">
+            <a href="javascript:void(0);">
+                Resume
+            </a>
+        </div>
 
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-      </div>
-      
+        <div class="icons-collapse">
+            <div class="item-right">
+                <a href="https://www.linkedin.com/in/chkorkos/" target="_blank">
+                    <img src="../images/icons/linkedin-light.png" alt="LinkedIn">
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="mailto:chkorkos@gmail.com" target="_blank">
+                    <img src="../images/icons/mail-light.png" alt="Email">
+                </a>
+            </div>
+        </div>
     </div>
-  </nav>
+  </div>
 
-  <section id="intro" style="padding-bottom: 0px;">
+  <section id="intro" class="page-content-static" style="padding-bottom: 0px;">
     <div class="container">
 
       <!-- Intro -->
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h3 style="font-weight: normal; text-align: center;">
-            Research
-          </h3>
-          <h5 class="subheader">Publications and Design Contributions</h5>
-        </div>
+      <div>
+        <h2 style="width: 100%; margin-top: 40px; font-weight: normal; text-align: center;">
+          Research
+        </h2>
+        <h4 class="subheader" style="width: 100%; text-align: center;">Publications and Design Contributions</h4>
       </div>
 
   </section>
 
-  <section id="overview">
+  <section id="overview" class="page-content-static">
     <div class="container">
 
       <hr>
@@ -172,6 +192,8 @@
       </p>
 
     </div>
+
+    <hr>
   </section>
 
   <!-- Footer -->

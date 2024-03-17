@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <link rel="icon" href="../images/icons/waveLight.ico">
+  <link rel="icon" href="../images/icons/ck-logo.ico">
 
   <title>Chris Korkos - UX Design</title>
 
@@ -24,6 +24,11 @@
   <!-- Font Styles -->
   <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
 
+  <!-- Font: Megrim -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
+
   <!-- jQuery Online Link -->
   <script 
     src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -36,131 +41,129 @@
 
 <body id="page-top" data-spy="scroll" data-target="#mainNav" >
 
-  <header class="bg-primary text-white">
-    <div id="bg-img"></div>
-
-    <div id="logo-name">
-      <img id="logo" src="../images/icons/wave.png">
-
-      <div id="name" class="container text-left">
-        <h1 class="name-text"><b>Christopher</b> Korkos</h1>
-        <p class="lead title-text">User Experience Designer | Seattle, Washington</p>
-      </div>
-
+  <!-- Navbar -->
+  <div id="nav-parent">
+    <div id="navbar" class="nav">
+        <div class="item-left">
+            <a href="../index.html">
+                <img class="site-icon" src="../images/icons/ck-logo.ico" alt="Site Icon">
+                <span><b>Christopher</b> Korkos</span>
+            </a>
+        </div>
+        <div class="item-right">
+            <a href="../index.html">
+                Home
+            </a>
+        </div>
+        <div class="item-right">
+            <a href="../index.html#projects">
+                Projects
+            </a>
+        </div>
+        <div class="item-right">
+            <a href="../index.html#about">
+                About Me
+            </a>
+        </div>
+        <div class="item-right">
+            |
+        </div>
+        <div class="item-right">
+            <a href="../files/resume.pdf" target="_blank">
+                Resume
+            </a>
+        </div>
+        <div class="item-right">
+            <a href="https://www.linkedin.com/in/chkorkos/" target="_blank">
+                <img src="../images/icons/linkedin-light.png" alt="LinkedIn">
+            </a>
+        </div>
+        <div class="item-right">
+            <a href="mailto:chkorkos@gmail.com" target="_blank">
+                <img src="../images/icons/mail-light.png" alt="Email">
+            </a>
+        </div>    
     </div>
-  </header>
 
-  <!-- Navigation 1 -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-    <div class="container">
+    <div id="navbar-collapse" class="nav">
+        <div class="item-left">
+            <img class="site-icon" src="../images/icons/ck-logo.ico" alt="Site Icon">
+            <span>
+                <b>Christopher</b> Korkos
+            </span>
+        </div>
 
-      <a id="nav-name" class="navbar-brand js-scroll-trigger mx-auto" href="#page-top">
-        <img src="../images/icons/wave.png" width="30px" height="30px" align="left" style="margin-right: 10px;">
-        <text><b>Christopher</b> Korkos</text>
-      </a>
+        <div class="project-tab-hamburger">
+            <a href="javascript:void(0);" onclick="openHamburgerMain()">
+                <img src="../files/images/general/hamburger-wt.svg" alt="Hamburger Icon">
+            </a>
+        </div>
 
-      <button class="navbar-toggler ml-auto float-xs-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a id="homeButton" class="nav-link" href="../index.html">
-              Home
+        <div class="project-tab-close">
+            <a href="javascript:void(0);" onclick="closeHamburgerMain()">
+                <img src="../files/images/general/close-wt.svg" alt="Close Icon">
             </a>
-          </li>
-          <li class="nav-item">
-            <a id="workButton" class="nav-link stayOrange" href="../index.html#work">
-              Projects
-            </a>
-          </li>
-          <li class="nav-item">
-            <a id="toolsButton" class="nav-link" href="../index.html#tools">
-              Design Tools
-            </a>
-          </li>
-          <li class="nav-item">
-            <a id="aboutButton" class="nav-link" href="../index.html#about">
-              About
-            </a>
-          </li>
-          <li class="nav-item">
-            <!-- Vertical Line Separator -->
-            <div id="separator"></div>
-          </li>
-          <li class="nav-item">
-            <a id="resumeButton" class="nav-link" href="../files/resume.pdf" target="_blank">
-              Resume
-            </a>
-          </li>
-          <li class="nav-item">
-            <a id="email-list" class="nav-link js-scroll-trigger" href="mailto:chkorkos@gmail.com" target="_blank">
-              <img src="../images/icons/mail-light.png" width="30px" height="30px">
-            </a>
-          </li>
-          <li class="nav-item">
-            <a id="linkedin-list" class="nav-link js-scroll-trigger" href="https://www.linkedin.com/in/chkorkos" target="_blank">
-              <img src="../images/icons/linkedin-light.png" width="30px" height="30px">
-            </a>
-          </li>
-        </ul>
-      </div>
+        </div>
+    
     </div>
-  </nav>
 
-  <!-- Navigation 2 -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="subNav">
-    <div class="container">
-
-      <a id="nav-name" class="navbar-brand js-scroll-trigger mx-auto" href="#page-top">
-        <img src="../images/icons/wave.png" width="30px" height="30px" align="left" style="margin-right: 10px;">
-        <text><b>Christopher</b> Korkos</text>
-      </a>
-
-      <button class="navbar-toggler ml-auto float-xs-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a id="workButton" class="nav-link js-scroll-trigger" href="#overview">
-              Overview
+    <!-- Main Hamburger Menu -->
+    <div class="hamburger-menu-main">
+        <div id="home-link" class="menu-option">
+            <a href="../index.html">
+                Home
             </a>
-          </li>
-          <li class="nav-item">
-            <a id="resumeButton" class="nav-link js-scroll-trigger" href="#process">
-              Design Process
+        </div>
+        <div id="projects-link" class="menu-option">
+            <a href="../index.html#projects">
+                Projects
             </a>
-          </li>
-          <li class="nav-item">
-            <a id="aboutButton" class="nav-link js-scroll-trigger" href="#summary">
-              Summary
+        </div>
+        <div id="about-link" class="menu-option">
+            <a href="../index.html#about">
+                About
             </a>
-          </li>
-        </ul>
-      </div>
-      
+        </div>
+
+        <div>
+            <hr>
+        </div>
+
+        <div id="resume-link" class="menu-option">
+            <a href="javascript:void(0);">
+                Resume
+            </a>
+        </div>
+
+        <div class="icons-collapse">
+            <div class="item-right">
+                <a href="https://www.linkedin.com/in/chkorkos/" target="_blank">
+                    <img src="../images/icons/linkedin-light.png" alt="LinkedIn">
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="mailto:chkorkos@gmail.com" target="_blank">
+                    <img src="../images/icons/mail-light.png" alt="Email">
+                </a>
+            </div>
+        </div>
     </div>
-  </nav>
+  </div>
 
-  <section id="intro" style="padding-bottom: 0px;">
+  <section id="intro" class="page-content-static" style="padding-bottom: 0px;">
     <div class="container">
 
       <!-- Intro -->
       <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h3 style="font-weight: normal; text-align: center;">
-            Yomp
-          </h3>
-          <h5 class="subheader">Business-End Member Management Tool</h5>
-        </div>
+        <h2 style="width: 100%; margin-top: 40px; font-weight: normal; text-align: center;">
+          Yomp
+        </h2>
+        <h4 class="subheader" style="width: 100%; text-align: center;">Business-End Management Tool</h4>
       </div>
 
   </section>
 
-  <section id="overview">
+  <section id="overview" class="page-content-static">
     <div class="container">
 
       <hr>
@@ -200,7 +203,7 @@
     </div>
   </section>
 
-  <section id="process" class="bg-light">
+  <section id="process" class="page-content-static" class="bg-light">
     <div class="container">
 
       <h4 style="font-weight: normal; text-align: center; padding-top: 25px;">
@@ -380,95 +383,19 @@
           <!-- Images used to open the lightbox -->
           <div class="row mx-auto">
             <div class="thumbnail-container mx-auto col-md-6" align="center">
-              <img class="thumbnail" src="../images/designs/yomp/designs/img1.png" onclick="openModal('yomp_design_modal');currentSlide(1, 'yomp_design_modal')" class="hover-shadow" width="75%" height="auto" style="padding-bottom:25px;" data-target="#yomp_design_modal" data-toggle="modal" data-backdrop="static" data-keyboard="false">
+              <img class="thumbnail" src="../images/designs/yomp/designs/img1.png" class="hover-shadow" width="75%" height="auto" style="padding-bottom:25px;" data-target="#yomp_design_modal" data-toggle="modal" data-backdrop="static" data-keyboard="false">
             </div>
             <div class="thumbnail-container mx-auto col-md-6" align="center">
-              <img class="thumbnail" src="../images/designs/yomp/designs/img2.png" onclick="openModal('yomp_design_modal');currentSlide(2, 'yomp_design_modal')" class="hover-shadow" width="75%" height="auto" style="padding-bottom:25px;" data-target="#yomp_design_modal" data-toggle="modal" data-backdrop="static" data-keyboard="false">
+              <img class="thumbnail" src="../images/designs/yomp/designs/img2.png" class="hover-shadow" width="75%" height="auto" style="padding-bottom:25px;" data-target="#yomp_design_modal" data-toggle="modal" data-backdrop="static" data-keyboard="false">
             </div>
           </div>
           
           <div class="row mx-auto">
             <div class="thumbnail-container mx-auto col-md-6" align="center">
-              <img class="thumbnail" src="../images/designs/yomp/designs/img3.png" onclick="openModal('yomp_design_modal');currentSlide(3, 'yomp_design_modal')" class="hover-shadow" width="75%" height="auto" style="padding-bottom:25px;" data-target="#yomp_design_modal" data-toggle="modal" data-backdrop="static" data-keyboard="false">
+              <img class="thumbnail" src="../images/designs/yomp/designs/img3.png" class="hover-shadow" width="75%" height="auto" style="padding-bottom:25px;" data-target="#yomp_design_modal" data-toggle="modal" data-backdrop="static" data-keyboard="false">
             </div>
             <div class="thumbnail-container mx-auto col-md-6" align="center">
-              <img class="thumbnail" src="../images/designs/yomp/designs/img4.png" onclick="openModal('yomp_design_modal');currentSlide(4, 'yomp_design_modal')" class="hover-shadow" width="75%" height="auto" style="padding-bottom:25px;" data-target="#yomp_design_modal" data-toggle="modal" data-backdrop="static" data-keyboard="false">
-            </div>
-          </div>
-          
-          <!-- The Modal/Lightbox -->
-          <div id="yomp_design_modal" class="modal">
-            <div class="modal-content">
-              <span class="close cursor" align="right" data-dismiss="modal" onclick="closeModal('yomp_design_modal')">
-                &times;
-              </span>
-
-              <div class="row modalSlides">
-                <div class="col-md-12" style="clear:both;">
-                  <div class="displaySlides">
-                    <img class="display-image" src="../images/designs/yomp/designs/img1.png">
-                    
-                    <p class="mx-auto">
-                      After finalizing the interactions and structure of the website, we focused on visual design and feel of the final product.
-                    </p>
-                  </div>
-
-                  <div class="displaySlides">
-                    <img class="display-image" src="../images/designs/yomp/designs/img2.png">
-                    
-                    <p class="mx-auto">
-                      One of the additions made while iterating on initial wireframes was the Business/Organization signup. This enabled approved outside groups to access their specific group and events.
-                    </p>
-                  </div>
-
-                  <div class="displaySlides">
-                    <img class="display-image" src="../images/designs/yomp/designs/img3.png">
-                    
-                    <p class="mx-auto">
-                      We also redesigned the Region banner to enable selection of both Region and Location from the homepage. This change accommodated higher level users with access to multiple locations.
-                    </p>
-                  </div>
-
-                  <div class="displaySlides">
-                    <img class="display-image" src="../images/designs/yomp/designs/img4.png">
-                    
-                    <p class="mx-auto">
-                      Businesses, Organizations, and Events were given individual pages. This increased error prevention by isolating the Creating and Editing processes to their own pages.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="row">
-                
-                <div class="col-md-3"></div>
-                
-                <div class="col-md-6 modalNav">
-                  <a class="switch" onclick="plusSlides(-1, 'yomp_design_modal')">
-                    <img id="prev" onmouseover="hoverColor('prev')" onmouseout="standardColor('prev')" src="../images/icons/prev.png" width="25px" height="auto">
-                  </a>
-                  
-                  <a class="slideNum" onclick="openModal('yomp_design_modal');currentSlide(1, 'yomp_design_modal')">
-                    <div class="dot"></div>
-                  </a>
-                  <a class="slideNum" onclick="openModal('yomp_design_modal');currentSlide(2, 'yomp_design_modal')">
-                    <div class="dot"></div>
-                  </a>
-                  <a class="slideNum" onclick="openModal('yomp_design_modal');currentSlide(3, 'yomp_design_modal')">
-                    <div class="dot"></div>
-                  </a>
-                  <a class="slideNum" onclick="openModal('yomp_design_modal');currentSlide(4, 'yomp_design_modal')">
-                    <div class="dot"></div>
-                  </a>
-                  
-                  <a class="switch" onclick="plusSlides(1, 'yomp_design_modal')">
-                    <img id="next" onmouseover="hoverColor('next')" onmouseout="standardColor('next')" src="../images/icons/next.png" width="25px" height="auto">
-                  </a>
-                </div>
-                
-                <div class="col-md-3"></div>
-                
-              </div>
+              <img class="thumbnail" src="../images/designs/yomp/designs/img4.png" class="hover-shadow" width="75%" height="auto" style="padding-bottom:25px;" data-target="#yomp_design_modal" data-toggle="modal" data-backdrop="static" data-keyboard="false">
             </div>
           </div>
           
@@ -482,25 +409,20 @@
         For final testing and development, I created an interactive prototype in Invision using the high fidelity designs. We used this to conduct final validation of the design decisions before passing the designs to development.
       </p>
       
-      <div class="row" style="padding-left:0%; margin:0;">
-        
-        <div class="col-md-3"></div>
-        
-        <div id="yompDemo" class="col-md-6 card bg-dark text-white">
+      <div style="padding-left:0%; margin:0;">
+                
+        <div id="yompDemo" class="bg-dark text-white">
           <a href="../images/designs/yomp/web_1/index.html" target="_blank">
-            <img src="../images/designs/yomp/designs/img_demo.png" class="card-img">
             <div class="card-img-overlay">
               <h5 class="card-title">Explore Interactive Prototype</h5>
             </div>
           </a>
         </div>
           
-        <div class="col-md-3"></div>
-
     </div>
   </section>
 
-  <section id="summary">
+  <section id="summary" class="page-content-static">
     <div class="container">
       
       <h4 style="font-weight: normal; text-align: center; padding-top: 25px;">

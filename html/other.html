@@ -8,9 +8,9 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <link rel="icon" href="../images/icons/waveLight.ico">
+  <link rel="icon" href="../images/icons/ck-logo.ico">
 
-  <title>Chris Korkos - UX Design</title>
+  <title>UX Design | Christopher Korkos</title>
 
   <!-- Bootstrap core CSS -->
   <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -24,6 +24,11 @@
   <!-- Font Styles -->
   <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
 
+  <!-- Font: Megrim -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
+
   <!-- jQuery Online Link -->
   <script 
     src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -36,251 +41,265 @@
 
 <body id="page-top" data-spy="scroll" data-target="#mainNav">
 
-  <header class="bg-primary text-white">
-    <div id="bg-img"></div>
-
-    <div id="logo-name">
-      <img id="logo" src="../images/icons/wave.png">
-
-      <div id="name" class="container text-left">
-        <h1 class="name-text"><b>Christopher</b> Korkos</h1>
-        <p class="lead title-text">User Experience Designer | Seattle, Washington</p>
-      </div>
-
+  <!-- Navbar -->
+  <div id="nav-parent">
+    <div id="navbar" class="nav">
+        <div class="item-left">
+            <a href="../index.html">
+                <img class="site-icon" src="../images/icons/ck-logo.ico" alt="Site Icon">
+                <span><b>Christopher</b> Korkos</span>
+            </a>
+        </div>
+        <div class="item-right">
+            <a href="../index.html">
+                Home
+            </a>
+        </div>
+        <div class="item-right">
+            <a href="../index.html#projects">
+                Projects
+            </a>
+        </div>
+        <div class="item-right">
+            <a href="../index.html#about">
+                About Me
+            </a>
+        </div>
+        <div class="item-right">
+            |
+        </div>
+        <div class="item-right">
+            <a href="../files/resume.pdf" target="_blank">
+                Resume
+            </a>
+        </div>
+        <div class="item-right">
+            <a href="https://www.linkedin.com/in/chkorkos/" target="_blank">
+                <img src="../images/icons/linkedin-light.png" alt="LinkedIn">
+            </a>
+        </div>
+        <div class="item-right">
+            <a href="mailto:chkorkos@gmail.com" target="_blank">
+                <img src="../images/icons/mail-light.png" alt="Email">
+            </a>
+        </div>    
     </div>
-  </header>
 
-  <!-- Navigation 1 -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-    <div class="container">
+    <div id="navbar-collapse" class="nav">
+        <div class="item-left">
+            <img class="site-icon" src="../images/icons/ck-logo.ico" alt="Site Icon">
+            <span>
+                <b>Christopher</b> Korkos
+            </span>
+        </div>
 
-      <a id="nav-name" class="navbar-brand js-scroll-trigger mx-auto" href="#page-top">
-        <img src="../images/icons/wave.png" width="30px" height="30px" align="left" style="margin-right: 10px;">
-        <text><b>Christopher</b> Korkos</text>
-      </a>
+        <div class="project-tab-hamburger">
+            <a href="javascript:void(0);" onclick="openHamburgerMain()">
+                <img src="../files/images/general/hamburger-wt.svg" alt="Hamburger Icon">
+            </a>
+        </div>
 
-      <button class="navbar-toggler ml-auto float-xs-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a id="homeButton" class="nav-link js-scroll-trigger" href="../index.html">
-              Home
+        <div class="project-tab-close">
+            <a href="javascript:void(0);" onclick="closeHamburgerMain()">
+                <img src="../files/images/general/close-wt.svg" alt="Close Icon">
             </a>
-          </li>
-          <li class="nav-item">
-            <a id="workButton" class="nav-link js-scroll-trigger stayOrange" href="../index.html#work">
-              Projects
-            </a>
-          </li>
-          <li class="nav-item">
-            <a id="toolsButton" class="nav-link js-scroll-trigger" href="../index.html#tools">
-              Design Tools
-            </a>
-          </li>
-          <li class="nav-item">
-            <a id="aboutButton" class="nav-link js-scroll-trigger" href="../index.html#about">
-              About
-            </a>
-          </li>
-          <li class="nav-item">
-            <!-- Vertical Line Separator -->
-            <div id="separator"></div>
-          </li>
-          <li class="nav-item">
-            <a id="resumeButton" class="nav-link js-scroll-trigger" href="../files/resume.pdf" target="_blank">
-              Resume
-            </a>
-          </li>
-          <li class="nav-item">
-            <a id="email-list" class="nav-link js-scroll-trigger" href="mailto:chkorkos@gmail.com" target="_blank">
-              <img src="../images/icons/mail-light.png" width="30px" height="30px">
-            </a>
-          </li>
-          <li class="nav-item">
-            <a id="linkedin-list" class="nav-link js-scroll-trigger" href="https://www.linkedin.com/in/chkorkos" target="_blank">
-              <img src="../images/icons/linkedin-light.png" width="30px" height="30px">
-            </a>
-          </li>
-        </ul>
-      </div>
+        </div>
+    
     </div>
-  </nav>
 
-  <!-- Navigation 2 -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="subNav">
-    <div class="container">
+    <!-- Main Hamburger Menu -->
+    <div class="hamburger-menu-main">
+        <div id="home-link" class="menu-option">
+            <a href="../index.html">
+                Home
+            </a>
+        </div>
+        <div id="projects-link" class="menu-option">
+            <a href="../index.html#projects">
+                Projects
+            </a>
+        </div>
+        <div id="about-link" class="menu-option">
+            <a href="../index.html#about">
+                About
+            </a>
+        </div>
 
-      <a id="nav-name" class="navbar-brand js-scroll-trigger mx-auto" href="#page-top">
-        <img src="../images/icons/wave.png" width="30px" height="30px" align="left" style="margin-right: 10px;">
-        <text><b>Christopher</b> Korkos</text>
-      </a>
+        <div>
+            <hr>
+        </div>
 
-      <button class="navbar-toggler ml-auto float-xs-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <div id="resume-link" class="menu-option">
+            <a href="javascript:void(0);">
+                Resume
+            </a>
+        </div>
 
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-      </div>
-      
+        <div class="icons-collapse">
+            <div class="item-right">
+                <a href="https://www.linkedin.com/in/chkorkos/" target="_blank">
+                    <img src="../images/icons/linkedin-light.png" alt="LinkedIn">
+                </a>
+            </div>
+            <div class="item-right">
+                <a href="mailto:chkorkos@gmail.com" target="_blank">
+                    <img src="../images/icons/mail-light.png" alt="Email">
+                </a>
+            </div>
+        </div>
     </div>
-  </nav>
+  </div>
 
   <section id="intro" style="padding-bottom: 0px;">
     <div class="container">
 
       <!-- Intro -->
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h3 style="font-weight: normal; text-align: center;">
-            Other Projects
-          </h3>
-          <h5 class="subheader">UX Design & Web Development</h5>
-        </div>
+      <div>
+        <h2 style="width: 100%; margin-top: 40px; font-weight: normal; text-align: center;">
+          Independent Projects
+        </h2>
+        <h4 class="subheader" style="width: 100%; text-align: center;">UX Design & Web Development</h4>
       </div>
 
   </section>
 
   <section id="overview">
-    <div class="container">
+    <div class="other-project-list">
 
       <hr>
       
-      <div class="card mb-3 projectCard">
-        <div class="row no-gutters">
-          <div class="col-md-4">
-            <img src="../images/icons/yomp.png" class="card-img" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">
-                Yomp
-              </h5>
-              <p class="card-text">
-                Yomp was a volunteer, student-run design project aimed at building an app for students to connect with businesses and clubs across university campuses. My role as a UX Designer focused on redesigning the business-facing site, which enabled the Yomp team to set up accounts for organizations looking to increase visibility for their information and events.
-              </p>
-              <br>
-              <a href="yomp.html" target="_blank">
-                Case Study
-              </a>
-              <br>
-            </div>
-          </div>
+      <div class="other-project">
+        <div class="project-card-image">
+          <img src="../images/icons/spotify.png" class="card-img" alt="...">
         </div>
-      </div>
-
-      <hr>
-      
-      <div class="card mb-3 projectCard">
-        <div class="row no-gutters">
-          <div class="col-md-4">
-            <img src="../images/icons/research.png" class="card-img" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">
-                HCI Research
-              </h5>
-              <p class="card-text">
-                In past roles I have contributed my design and user testing work to HCI research projects. Though I am not currently pursuing a PhD, I find this experience valuable as it has enabled me to apply my skills to a wide range of project types.
-              </p>
-              <br>
-              <a href="research.html" target="_blank">
-                Research Papers
-              </a>
-              <br>
-            </div>
+        <div class="project-card-body">
+          <div class="card-body">
+            <h3 class="card-title">
+              Spotify: Usability Study
+            </h3>
+            <p class="card-text">
+              This report details the results of two studies that I conducted on Spotify’s mobile application. I ran a moderated usability test (5 participants) with the goal of discovering how experienced users perform at tasks that gradually increase in complexity, as well as an online survey (42 participants) intended to gather quantitative user data. The studies uncovered various ongoing issues with the application, both in design and engineering. Based on my findings, I propose several UX Recommendations as well as steps to take for future research.
+            </p>
+            <br>
+            <a href="spotify.html" target="_blank">
+              Case Page
+            </a>
+            <br>
+            <br>
+            <a href="../images/designs/spotify/spotify_xd_report.pdf" target="_blank">
+              Case Study Document
+            </a>
+            <br>
           </div>
         </div>
       </div>
 
       <hr>
       
-      <div class="card mb-3 projectCard">
-        <div class="row no-gutters">
-          <div class="col-md-4">
-            <img src="../images/designs/pulse/pulse2.jpg" class="card-img" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">
-                Student Pulse
-              </h5>
-              <p class="card-text">
-                This was my first web design project at UCSD, completed for the Cognitive Science class, Cognitive Design Studio. Groups of four students completed user research and design prototypes to present pitch-style at the end of the course.
-                <br>
-                <br>
-                I discovered an interest in researching and interviewing users to find potential design improvements. I also gained my first experience in Axure and Invision while creating interactive prototypes for testing.
-              </p>
-              <br>
-              <a href="../images/designs/pulse/paper.pdf" target="_blank">
-                Our Design Research Paper
-              </a>
-              <br>
-              <br>
-              <a href="../images/designs/pulse/pres.pdf" target="_blank">
-                Our Final PowerPoint Presentation
-              </a>
-            </div>
+      <div class="other-project">
+        <div class="project-card-image">
+          <img src="../images/icons/audible.png" class="card-img" alt="...">
+        </div>
+        <div class="project-card-body">
+          <div class="card-body">
+            <h3 class="card-title">
+              Amazon Audible: App Redesign
+            </h3>
+            <p class="card-text">
+              Amazon Audible gives users access to thousands of audiobooks, in addition to magazines, podcasts, and originals. This case study details the results of my usability testing (3 participants) and personal design evaluation of Audible, intended to gather qualitative data and discover usability issues. These issues, along with their actionable design solutions and mockups, are provided below. Based on my findings, I propose several design solutions as well as steps to take for future research and design.
+            </p>
+            <br>
+            <a href="audible.html" target="_blank">
+              Case Page
+            </a>
+            <br>
+            <br>
+            <a href="../images/designs/audible/audible_case_study.pdf" target="_blank">
+              Case Study Document
+            </a>
+            <br>
           </div>
         </div>
       </div>
-      
+
       <hr>
       
-      <div class="card mb-3 projectCard">
-        <div class="row no-gutters">
-          <div class="col-md-4">
-            <img src="../images/designs/colors/color.png" class="card-img" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">
-                Color Guessing Game
-              </h5>
-              <p class="card-text">
-                This was a personal exercise in web development using JavaScript for DOM manipulation and random generation. The goal of the game is relatively simple - match the RGB text displayed above the page to one of the randomized tiles below. The game includes options for Easy/Hard Mode, which changes the number of tiles, and New Game, which resets the board.
-                <br>
-                <br>
-                Select the "View CSS/JavaScript Source" links to read the source code.
-              </p>
-              <br>
-              <a href="../images/designs/colors/color.html" target="_blank">
-                Color Guessing Game
-              </a>
-            </div>
+      <div class="other-project">
+        <div class="project-card-image">
+          <img src="../images/icons/yomp.png" class="card-img" alt="...">
+        </div>
+        <div class="project-card-body">
+          <div class="card-body">
+            <h3 class="card-title">
+              Yomp
+            </h3>
+            <p class="card-text">
+              Yomp was a volunteer, student-run design project aimed at building an app for students to connect with businesses and clubs across university campuses. My role as a UX Designer focused on redesigning the business-facing site, which enabled the Yomp team to set up accounts for organizations looking to increase visibility for their information and events.
+            </p>
+            <br>
+            <a href="yomp.html" target="_blank">
+              Case Study
+            </a>
+            <br>
           </div>
         </div>
       </div>
-      
+
       <hr>
       
-      <div class="card mb-3 projectCard">
-        <div class="row no-gutters">
-          <div class="col-md-4">
-            <img src="../images/designs/todo/todo.png" class="card-img" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">
-                Task List
-              </h5>
-              <p class="card-text">
-                This was one of my first ventures into web development using JavaScript for DOM manipulation. The task list enables users to add items, check off items, and remove items.
-                <br>
-                <br>
-                Select the "View CSS/JavaScript Source" links to read the source code.
-              </p>
-              <br>
-              <a href="../images/designs/todo/todo.html" target="_blank">
-                Task List
-              </a>
-            </div>
+      <div class="other-project">
+        <div class="project-card-image">
+          <img src="../images/icons/research.png" class="card-img" alt="...">
+        </div>
+        <div class="project-card-body">
+          <div class="card-body">
+            <h3 class="card-title">
+              HCI Research
+            </h3>
+            <p class="card-text">
+              In past roles I have contributed my design and user testing work to HCI research projects. Though I am not currently pursuing a PhD, I find this experience valuable as it has enabled me to apply my skills to a wide range of project types.
+            </p>
+            <br>
+            <a href="research.html" target="_blank">
+              Research Papers
+            </a>
+            <br>
           </div>
         </div>
       </div>
+
+      <hr>
+      
+      <div class="other-project">
+        <div class="project-card-image">
+          <img src="../images/designs/pulse/pulse2.jpg" class="card-img" alt="...">
+        </div>
+        <div class="project-card-body">
+          <div class="card-body">
+            <h3 class="card-title">
+              Student Pulse
+            </h3>
+            <p class="card-text">
+              This was my first web design project at UCSD, completed for the Cognitive Science class, Cognitive Design Studio. Groups of four students completed user research and design prototypes to present pitch-style at the end of the course.
+              <br>
+              <br>
+              I discovered an interest in researching and interviewing users to find potential design improvements. I also gained my first experience in Axure and Invision while creating interactive prototypes for testing.
+            </p>
+            <br>
+            <a href="../images/designs/pulse/paper.pdf" target="_blank">
+              Our Design Research Paper
+            </a>
+            <br>
+            <br>
+            <a href="../images/designs/pulse/pres.pdf" target="_blank">
+              Our Final PowerPoint Presentation
+            </a>
+            <br>
+          </div>
+        </div>
+      </div>
+
+      <hr>
 
     </div>
   </section>
