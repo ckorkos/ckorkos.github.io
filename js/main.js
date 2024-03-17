@@ -140,7 +140,7 @@ function changeSkywindTab(tab) {
     }
     else if(tab==="marathon") {
         // Change Navbar Option Styling
-        $("#skywind-quests, #skywind-quests-menu").addClass("tab-selected");
+        $("#pse-marathon, #skywind-quests-menu").addClass("tab-selected");
 
         // Display Quests Tab, Hide Others
         $("#content-marathon").addClass("content-selected");
